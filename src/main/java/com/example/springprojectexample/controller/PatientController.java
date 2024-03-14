@@ -1,6 +1,6 @@
 package com.example.springprojectexample.controller;
 
-import com.example.springprojectexample.pojo.Patient;
+import com.example.springprojectexample.entity.Patient;
 import com.example.springprojectexample.service.PatientService;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
