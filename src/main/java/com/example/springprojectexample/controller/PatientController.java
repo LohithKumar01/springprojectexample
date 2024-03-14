@@ -1,6 +1,7 @@
 package com.example.springprojectexample.controller;
 
 import com.example.springprojectexample.entity.Patient;
+import com.example.springprojectexample.pojo.PatientDetails;
 import com.example.springprojectexample.service.PatientService;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,13 +27,14 @@ public class PatientController {
     }
 
     @PostMapping("/patient")
-    public Patient createPatient(@RequestBody Patient patient){
+    public String createPatient(@RequestBody PatientDetails patient){
         log.info("New Patient Details: {}",patient);
-        return patient;
+        String s=patientService.createPatient(patient);
+        return s;
     }
 
     @PutMapping("/patient/{id}")
-    public Patient updatePatient(@PathVariable("id")int id, @RequestBody Patient patient){
+    public PatientDetails updatePatient(@PathVariable("id")int id, @RequestBody PatientDetails patient){
         return patient;
     }
 
