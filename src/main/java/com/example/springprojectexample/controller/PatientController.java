@@ -29,8 +29,8 @@ public class PatientController {
     @PostMapping("/patient")
     public String createPatient(@RequestBody PatientDetails patient){
         log.info("New Patient Details: {}",patient);
-        String s=patientService.createPatient(patient);
-        return s;
+        String string=patientService.createPatient(patient);
+        return string;
     }
 
     @PutMapping("/patient/{id}")
