@@ -11,10 +11,8 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.transaction.Transactional;
-import java.time.LocalDate;
-import java.util.*;
-import java.util.stream.Collectors;
+import java.util.ArrayList;
+import java.util.List;
 
 @Service
 public class AdmissionService {
@@ -25,14 +23,14 @@ public class AdmissionService {
     @Autowired
     private DoctorRepository doctorRepository;
 
-    public AdmissionDetails addNewAdmission(AdmissionDetails admissionDetails){
+    public AdmissionDetails addNewAdmission(AdmissionDetails admissionDetails) {
 
-        Patient existingAdmission= patientRepository.findById(admissionDetails.getPatientId()).orElse(null);
-        if (existingAdmission==null) {
+        Patient existingAdmission = patientRepository.findById(admissionDetails.getPatientId()).orElse(null);
+        if (existingAdmission == null) {
             throw new RuntimeException("Invalid Patient ID");
         }
-        Admission newAdmission=new Admission();
-        BeanUtils.copyProperties(admissionDetails,newAdmission);
+        Admission newAdmission = new Admission();
+        BeanUtils.copyProperties(admissionDetails, newAdmission);
 
         newAdmission.setPatient(existingAdmission);
 
@@ -40,10 +38,10 @@ public class AdmissionService {
 
 
         PatientDetails admittedPatientDetails = new PatientDetails();
-        BeanUtils.copyProperties(createedAdmission.getPatient(),admittedPatientDetails);
+        BeanUtils.copyProperties(createedAdmission.getPatient(), admittedPatientDetails);
 
         AdmissionDetails newAdmissionDetails = new AdmissionDetails();
-        BeanUtils.copyProperties(createedAdmission,newAdmissionDetails);
+        BeanUtils.copyProperties(createedAdmission, newAdmissionDetails);
 
         newAdmissionDetails.setPatientDetails(admittedPatientDetails);
         return newAdmissionDetails;
@@ -54,19 +52,19 @@ public class AdmissionService {
         //Get values from admission repository by patient id and saved it in a list
         List<Admission> admissionsList = admissionRepository.getAdmissionsByPatientId(patientId);
         //As we should not return list of entity we convert it into pojo list and add admission details into that list
-        List<AdmissionDetails> admissionDetailsList = new ArrayList<>() ;
+        List<AdmissionDetails> admissionDetailsList = new ArrayList<>();
         //Iterate each entity object and save details into a new object.
-        for (Admission admission: admissionsList){
-            AdmissionDetails admissionDetails=new AdmissionDetails();
+        for (Admission admission : admissionsList) {
+            AdmissionDetails admissionDetails = new AdmissionDetails();
             //We have same attributes and we copy to the new object.
-            BeanUtils.copyProperties(admission,admissionDetails);
+            BeanUtils.copyProperties(admission, admissionDetails);
 
             admissionDetailsList.add(admissionDetails);
         }
         return admissionDetailsList;
     }
 
-    public void deleteAdmissionByPatientId(Long patientID){
+    public void deleteAdmissionByPatientId(Long patientID) {
         admissionRepository.deleteAdmissionByPatientId(patientID);
     }
 }

@@ -22,29 +22,30 @@ public class DoctorService {
     private DoctorRepository doctorRepository;
     @Autowired
     private AdmissionService admissionService;
-    public DoctorDetails getDoctorDetailsById(Long doctorId){
-        Doctor doctor = doctorRepository.getById(doctorId);
-        DoctorDetails doctorDetails=new DoctorDetails();
-        BeanUtils.copyProperties(doctor,doctorDetails);
 
-        List<Admission> admissionList=admissionRepository.getAdmissionDetailsByDoctorId(doctorId);
-        List<AdmissionDetails>admissionDetailsList=new ArrayList<>();
-        for (Admission admission:admissionList){
-            AdmissionDetails admissionDetails=new AdmissionDetails();
-            BeanUtils.copyProperties(admission,admissionDetails);
+    public DoctorDetails getDoctorDetailsById(Long doctorId) {
+        Doctor doctor = doctorRepository.getById(doctorId);
+        DoctorDetails doctorDetails = new DoctorDetails();
+        BeanUtils.copyProperties(doctor, doctorDetails);
+
+        List<Admission> admissionList = admissionRepository.getAdmissionDetailsByDoctorId(doctorId);
+        List<AdmissionDetails> admissionDetailsList = new ArrayList<>();
+        for (Admission admission : admissionList) {
+            AdmissionDetails admissionDetails = new AdmissionDetails();
+            BeanUtils.copyProperties(admission, admissionDetails);
             admissionDetailsList.add(admissionDetails);
         }
         doctorDetails.setAdmissionDetailsList(admissionDetailsList);
         return doctorDetails;
     }
 
-    public void deleteDoctorById(Long doctorId){
+    public void deleteDoctorById(Long doctorId) {
         doctorRepository.deleteById(doctorId);
     }
 
-    public DoctorDetails updateDoctor(DoctorDetails doctorDetails){
+    public DoctorDetails updateDoctor(DoctorDetails doctorDetails) {
         Doctor existingDoctorRecord = doctorRepository.findById(doctorDetails.getId()).orElse(null);
-        if (existingDoctorRecord==null){
+        if (existingDoctorRecord == null) {
             throw new RuntimeException("Invalid Doctor Id");
         }
         existingDoctorRecord.setFirstName(doctorDetails.getFirstName());
@@ -54,7 +55,7 @@ public class DoctorService {
         Doctor updatedDoctorDetails = doctorRepository.save(existingDoctorRecord);
 
         DoctorDetails updatedDoctorRecord = new DoctorDetails();
-        BeanUtils.copyProperties(updatedDoctorDetails,updatedDoctorRecord);
+        BeanUtils.copyProperties(updatedDoctorDetails, updatedDoctorRecord);
 
         return updatedDoctorRecord;
     }

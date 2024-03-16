@@ -10,7 +10,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 @Repository
-public interface AdmissionRepository extends JpaRepository<Admission,Long> {
+public interface AdmissionRepository extends JpaRepository<Admission, Long> {
 
     @Query("SELECT a FROM Admission a WHERE a.patient.id = ?1")
     public List<Admission> getAdmissionsByPatientId(Long patientId);

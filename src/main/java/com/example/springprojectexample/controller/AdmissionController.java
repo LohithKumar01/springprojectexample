@@ -14,16 +14,17 @@ public class AdmissionController {
     private AdmissionService admissionService;
 
     @PostMapping("/admission")
-    public AdmissionDetails addNewAdmission(@RequestBody final AdmissionDetails admissionDetails){
+    public AdmissionDetails addNewAdmission(@RequestBody final AdmissionDetails admissionDetails) {
         return admissionService.addNewAdmission(admissionDetails);
     }
+
     @GetMapping("/admission/patient/{id}")
     public List<AdmissionDetails> getAdmissionsDetailsByPatientId(@PathVariable("id") Long patientId) {
         return admissionService.getAdmissionsDetailsByPatientId(patientId);
     }
 
     @DeleteMapping("/admission")
-    public String deleteAdmissionDetailsByPatientId(@RequestParam("patient_id") Long patientId){
+    public String deleteAdmissionDetailsByPatientId(@RequestParam("patient_id") Long patientId) {
         admissionService.deleteAdmissionByPatientId(patientId);
         return "Success";
 

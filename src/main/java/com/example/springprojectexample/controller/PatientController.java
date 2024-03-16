@@ -13,13 +13,13 @@ public class PatientController {
     private PatientService patientService;
 
     @GetMapping("/patient/{id}")
-    public PatientDetails getPatient(@PathVariable("id") Long id){
-        log.info("Patient Record Found: {}",id);
+    public PatientDetails getPatient(@PathVariable("id") Long id) {
+        log.info("Patient Record Found: {}", id);
         return patientService.getPatient(id);
     }
 
     @DeleteMapping("/patient")
-    public String deletePatient(@RequestParam("id")int id){
+    public String deletePatient(@RequestParam("id") int id) {
         System.out.println(id);
         return "Record Deleted";            //url: /patient?id=110
     }
@@ -32,7 +32,7 @@ public class PatientController {
 
 
     @PutMapping("/patient/{id}")
-    public PatientDetails updatePatient(@PathVariable("id")int id, @RequestBody PatientDetails patient){
+    public PatientDetails updatePatient(@PathVariable("id") int id, @RequestBody PatientDetails patient) {
         return patient;
     }
 

@@ -17,7 +17,8 @@ public class PatientService {
     private PatientRepository patientRepository;        //Controller -> when url hits it goes to controller.
     @Autowired
     private AdmissionService admissionService;
-    public PatientDetails createPatient(PatientDetails patient){
+
+    public PatientDetails createPatient(PatientDetails patient) {
 
         Patient newPatient = new Patient();
         newPatient.setFirstName(patient.getFirstName());
@@ -38,13 +39,13 @@ public class PatientService {
         return updatedPatient;
     }
 
-    public PatientDetails getPatient(Long id){
+    public PatientDetails getPatient(Long id) {
         Patient patientById = patientRepository.findById(id).orElse(null);  //Connect to repository to get details.
-        if (patientById==null){
+        if (patientById == null) {
             throw new RuntimeException("No Patient Found.");        //If id not found throw exception.
         }
-        PatientDetails patientDetails=new PatientDetails();     //Copying Entity properties to Pojo
-        BeanUtils.copyProperties(patientById,patientDetails);
+        PatientDetails patientDetails = new PatientDetails();     //Copying Entity properties to Pojo
+        BeanUtils.copyProperties(patientById, patientDetails);
 
         List<AdmissionDetails> admissionsDetailsByPatientIdList = admissionService.getAdmissionsDetailsByPatientId(id);
         //Set Admission details list in pojo with  admission details by patient id list
@@ -52,7 +53,6 @@ public class PatientService {
 
         return patientDetails;          //We can't return entity so we create new pojo object and return that.
     }
-
 
 
 }

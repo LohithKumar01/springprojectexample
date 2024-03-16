@@ -1,14 +1,9 @@
 package com.example.springprojectexample.controller;
 
-import com.example.springprojectexample.pojo.AdmissionDetails;
 import com.example.springprojectexample.pojo.DoctorDetails;
-import com.example.springprojectexample.repository.DoctorRepository;
 import com.example.springprojectexample.service.DoctorService;
 import org.springframework.beans.factory.annotation.Autowired;
-
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @RestController
 public class DoctorController {
@@ -21,7 +16,7 @@ public class DoctorController {
 //    }
 
     @GetMapping("/doctor/admission/{id}")
-    public DoctorDetails getAdmissionsByDoctorId(@PathVariable("id")Long doctorId){
+    public DoctorDetails getAdmissionsByDoctorId(@PathVariable("id") Long doctorId) {
         return doctorService.getDoctorDetailsById(doctorId);
     }
 
