@@ -1,6 +1,5 @@
 package com.example.springprojectexample.controller;
 
-import com.example.springprojectexample.entity.Patient;
 import com.example.springprojectexample.pojo.PatientDetails;
 import com.example.springprojectexample.service.PatientService;
 import lombok.extern.log4j.Log4j2;
@@ -14,10 +13,9 @@ public class PatientController {
     private PatientService patientService;
 
     @GetMapping("/patient/{id}")
-    public String getPatient(@PathVariable("id") int id){
+    public PatientDetails getPatient(@PathVariable("id") Long id){
         log.info("Patient Record Found: {}",id);
-//        System.out.println(id);
-        return "Success";
+        return patientService.getPatient(id);
     }
 
     @DeleteMapping("/patient")
@@ -27,11 +25,11 @@ public class PatientController {
     }
 
     @PostMapping("/patient")
-    public String createPatient(@RequestBody PatientDetails patient){
-        log.info("New Patient Details: {}",patient);
-        String string=patientService.createPatient(patient);
-        return string;
+    public PatientDetails createPatient(@RequestBody PatientDetails patient) {
+        log.info("New Patient Details: {}", patient);
+        return patientService.createPatient(patient);
     }
+
 
     @PutMapping("/patient/{id}")
     public PatientDetails updatePatient(@PathVariable("id")int id, @RequestBody PatientDetails patient){

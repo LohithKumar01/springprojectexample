@@ -8,8 +8,8 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface PatientRepository extends JpaRepository<Patient,Integer>, JpaSpecificationExecutor<Patient> {
-    @Query("SELECT p FROM HospitalDB p WHERE p.city=?1")
-    Patient findPatientByCity(String city);
+public interface PatientRepository extends JpaRepository<Patient,Long>, JpaSpecificationExecutor<Patient> {
+    @Query("SELECT p FROM Patient p WHERE p.id=?1")        //Annotation creates custom queries
+    Patient findPatientById(Integer id);
 
 }

@@ -2,8 +2,6 @@ package com.example.springprojectexample.entity;
 
 import lombok.Getter;
 import lombok.Setter;
-import org.springframework.boot.autoconfigure.domain.EntityScan;
-
 import javax.persistence.*;
 import java.time.LocalDate;
 
@@ -14,19 +12,19 @@ import java.time.LocalDate;
 public class Patient {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer patient_id;
+    private Long id;
 
-    private String first_name;
+    private String firstName;
 
-    private String last_name;
+    private String lastName;
 
     private String gender;
 
-    private LocalDate birth_date;
+    private LocalDate birthDate;
 
     private String city;
 
-    private String province_id;
+    private String provinceId;
 
     private String allergies;
 

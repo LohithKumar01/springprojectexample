@@ -14,12 +14,12 @@ import java.time.LocalDate;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AdmissionDetails {
     private Long id;
-    private LocalDate admission_date;
-    private LocalDate discharge_date;
+    private LocalDate admissionDate;
+    private LocalDate dischargeDate;
     private String diagnosis;
-    @Column(name = "attending_doctor_id")
-    private Integer doctor_id;
+
+    private Long doctorId;
 
     private PatientDetails patientDetails;
-    private Long patient_id;
+    private Long patientId;
 }

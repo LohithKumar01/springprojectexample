@@ -6,19 +6,22 @@ import lombok.Setter;
 import lombok.ToString;
 
 import java.time.LocalDate;
+import java.util.List;
 
 @Getter
 @Setter
 @ToString
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class PatientDetails {
-    private Integer patient_id;
-    private String first_name;
-    private String last_name;
+    private Long id;
+    private String firstName;
+    private String lastName;
     private String gender;
-    private LocalDate birth_date;
+    private LocalDate birthDate;
     private String city;
-    private String province_id;
+    private String provinceId;
     private String allergies;
     private Integer height;
     private Integer weight;
+    private List<AdmissionDetails> AdmissionDetailsList;
 }
