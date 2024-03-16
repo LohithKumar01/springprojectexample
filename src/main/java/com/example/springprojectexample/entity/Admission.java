@@ -21,8 +21,9 @@ public class Admission {
 
     private String diagnosis;
 
-    @Column(name = "attending_doctor_id")
-    private Long doctorId;
+    @ManyToOne
+    @JoinColumn(name = "attending_doctor_id")
+    private Doctor doctor;
 
 
     @ManyToOne

@@ -5,13 +5,15 @@ import com.example.springprojectexample.entity.Patient;
 import com.example.springprojectexample.pojo.AdmissionDetails;
 import com.example.springprojectexample.pojo.PatientDetails;
 import com.example.springprojectexample.repository.AdmissionRepository;
+import com.example.springprojectexample.repository.DoctorRepository;
 import com.example.springprojectexample.repository.PatientRepository;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.time.LocalDate;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @Service
@@ -20,6 +22,8 @@ public class AdmissionService {
     private AdmissionRepository admissionRepository;
     @Autowired
     private PatientRepository patientRepository;
+    @Autowired
+    private DoctorRepository doctorRepository;
 
     public AdmissionDetails addNewAdmission(AdmissionDetails admissionDetails){
 
@@ -45,17 +49,24 @@ public class AdmissionService {
         return newAdmissionDetails;
     }
 
-    public List<Admission> getAdmissionsDetailsByPatientId(Long patientId) {
-        List<Admission> admissionsList = admissionRepository.getAdmissionsByPatientId(patientId);
 
+    public List<AdmissionDetails> getAdmissionsDetailsByPatientId(Long patientId) {
+        //Get values from admission repository by patient id and saved it in a list
+        List<Admission> admissionsList = admissionRepository.getAdmissionsByPatientId(patientId);
+        //As we should not return list of entity we convert it into pojo list and add admission details into that list
+        List<AdmissionDetails> admissionDetailsList = new ArrayList<>() ;
+        //Iterate each entity object and save details into a new object.
         for (Admission admission: admissionsList){
-            Long admissionId= admission.getId();
-            LocalDate admissionDate = admission.getAdmissionDate();
-            LocalDate dischargeDate = admission.getDischargeDate();
-            String diagnosis = admission.getDiagnosis();
-            Long doctorId = admission.getDoctorId();
+            AdmissionDetails admissionDetails=new AdmissionDetails();
+            //We have same attributes and we copy to the new object.
+            BeanUtils.copyProperties(admission,admissionDetails);
+
+            admissionDetailsList.add(admissionDetails);
         }
-        return admissionsList;
+        return admissionDetailsList;
     }
 
+    public void deleteAdmissionByPatientId(Long patientID){
+        admissionRepository.deleteAdmissionByPatientId(patientID);
+    }
 }

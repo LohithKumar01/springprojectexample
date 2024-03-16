@@ -1,18 +1,22 @@
 package com.example.springprojectexample.service;
 
 import com.example.springprojectexample.entity.Patient;
+import com.example.springprojectexample.pojo.AdmissionDetails;
 import com.example.springprojectexample.pojo.PatientDetails;
 import com.example.springprojectexample.repository.PatientRepository;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class PatientService {
 
     @Autowired
     private PatientRepository patientRepository;        //Controller -> when url hits it goes to controller.
-
+    @Autowired
+    private AdmissionService admissionService;
     public PatientDetails createPatient(PatientDetails patient){
 
         Patient newPatient = new Patient();
@@ -39,11 +43,16 @@ public class PatientService {
         if (patientById==null){
             throw new RuntimeException("No Patient Found.");        //If id not found throw exception.
         }
-        PatientDetails patientDetailsById=new PatientDetails();     //Copying Entity properties to Pojo
-        BeanUtils.copyProperties(patientById,patientDetailsById);
+        PatientDetails patientDetails=new PatientDetails();     //Copying Entity properties to Pojo
+        BeanUtils.copyProperties(patientById,patientDetails);
 
-        return patientDetailsById;          //We can't return entity so we create new pojo object and return that.
+        List<AdmissionDetails> admissionsDetailsByPatientIdList = admissionService.getAdmissionsDetailsByPatientId(id);
+        //Set Admission details list in pojo with  admission details by patient id list
+        patientDetails.setAdmissionDetailsList(admissionsDetailsByPatientIdList);
+
+        return patientDetails;          //We can't return entity so we create new pojo object and return that.
     }
+
 
 
 }

@@ -1,6 +1,5 @@
 package com.example.springprojectexample.controller;
 
-import com.example.springprojectexample.entity.Admission;
 import com.example.springprojectexample.pojo.AdmissionDetails;
 import com.example.springprojectexample.service.AdmissionService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,8 +17,15 @@ public class AdmissionController {
     public AdmissionDetails addNewAdmission(@RequestBody final AdmissionDetails admissionDetails){
         return admissionService.addNewAdmission(admissionDetails);
     }
-    @GetMapping("/admission/{id}")
-    public List<Admission> getAdmissionsDetailsByPatientId(@PathVariable("id") Long patientId) {
+    @GetMapping("/admission/patient/{id}")
+    public List<AdmissionDetails> getAdmissionsDetailsByPatientId(@PathVariable("id") Long patientId) {
         return admissionService.getAdmissionsDetailsByPatientId(patientId);
+    }
+
+    @DeleteMapping("/admission")
+    public String deleteAdmissionDetailsByPatientId(@RequestParam("patient_id") Long patientId){
+        admissionService.deleteAdmissionByPatientId(patientId);
+        return "Success";
+
     }
 }
