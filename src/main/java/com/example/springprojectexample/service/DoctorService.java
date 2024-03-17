@@ -26,7 +26,7 @@ public class DoctorService {
 
     public DoctorDetails getDoctorDetailsById(Long doctorId) {
         Optional<Doctor> doctorOptional = doctorRepository.findById(doctorId);
-        if (!doctorOptional.isPresent()){
+        if (doctorOptional.isEmpty()){
             throw new RuntimeException("Doctor Record Not found.");
         }
         Doctor doctor = doctorOptional.get();
@@ -64,6 +64,4 @@ public class DoctorService {
 
         return updatedDoctorRecord;
     }
-
-
 }

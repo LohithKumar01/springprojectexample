@@ -17,7 +17,6 @@ public class AdmissionDetails {
     private LocalDate admissionDate;
     private LocalDate dischargeDate;
     private String diagnosis;
-
     private Long doctorId;
 
     private PatientDetails patientDetails;

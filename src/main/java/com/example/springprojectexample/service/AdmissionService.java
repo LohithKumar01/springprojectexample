@@ -36,7 +36,6 @@ public class AdmissionService {
 
         Admission createedAdmission = admissionRepository.save(newAdmission);
 
-
         PatientDetails admittedPatientDetails = new PatientDetails();
         BeanUtils.copyProperties(createedAdmission.getPatient(), admittedPatientDetails);
 
@@ -46,7 +45,6 @@ public class AdmissionService {
         newAdmissionDetails.setPatientDetails(admittedPatientDetails);
         return newAdmissionDetails;
     }
-
 
     public List<AdmissionDetails> getAdmissionsDetailsByPatientId(Long patientId) {
         //Get values from admission repository by patient id and saved it in a list

@@ -30,10 +30,8 @@ public class PatientController {
         return patientService.createPatient(patient);
     }
 
-
     @PutMapping("/patient/{id}")
     public PatientDetails updatePatient(@PathVariable("id") int id, @RequestBody PatientDetails patient) {
         return patient;
     }
-
 }

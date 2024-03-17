@@ -51,7 +51,7 @@ public class PatientService {
         //Set Admission details list in pojo with  admission details by patient id list
         patientDetails.setAdmissionDetailsList(admissionsDetailsByPatientIdList);
 
-        return patientDetails;          //We can't return entity so we create new pojo object and return that.
+        return patientDetails;          //We can't return entity so, we create new pojo object and return that.
     }
 
 

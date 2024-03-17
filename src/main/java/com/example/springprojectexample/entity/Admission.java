@@ -14,17 +14,13 @@ public class Admission {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private LocalDate admissionDate;
-
     private LocalDate dischargeDate;
-
     private String diagnosis;
 
     @ManyToOne
     @JoinColumn(name = "attending_doctor_id")
     private Doctor doctor;
-
 
     @ManyToOne
     @JoinColumn(name = "patient_id")

@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 public class DoctorController {
     @Autowired
     private DoctorService doctorService;
-//
+
 //    @GetMapping("/doctor/{id}")
 //    public DoctorDetails getDoctorDetailsById(@PathVariable("id") Long doctorId) {
 //        return doctorService.getDoctorDetailsById(doctorId);

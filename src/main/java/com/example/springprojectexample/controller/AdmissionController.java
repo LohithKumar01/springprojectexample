@@ -26,7 +26,7 @@ public class AdmissionController {
     @DeleteMapping("/admission")
     public String deleteAdmissionDetailsByPatientId(@RequestParam("patient_id") Long patientId) {
         admissionService.deleteAdmissionByPatientId(patientId);
-        return "Success";
+        return "Record Deleted Successfully";
 
     }
 }

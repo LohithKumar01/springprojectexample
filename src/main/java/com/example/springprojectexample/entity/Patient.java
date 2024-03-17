@@ -16,20 +16,12 @@ public class Patient {
     private Long id;
 
     private String firstName;
-
     private String lastName;
-
     private String gender;
-
     private LocalDate birthDate;
-
     private String city;
-
     private String provinceId;
-
     private String allergies;
-
     private Integer height;
-
     private Integer weight;
 }
