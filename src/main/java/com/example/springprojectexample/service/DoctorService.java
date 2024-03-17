@@ -12,6 +12,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class DoctorService {
@@ -24,7 +25,11 @@ public class DoctorService {
     private AdmissionService admissionService;
 
     public DoctorDetails getDoctorDetailsById(Long doctorId) {
-        Doctor doctor = doctorRepository.getById(doctorId);
+        Optional<Doctor> doctorOptional = doctorRepository.findById(doctorId);
+        if (!doctorOptional.isPresent()){
+            throw new RuntimeException("Doctor Record Not found.");
+        }
+        Doctor doctor = doctorOptional.get();
         DoctorDetails doctorDetails = new DoctorDetails();
         BeanUtils.copyProperties(doctor, doctorDetails);
 
