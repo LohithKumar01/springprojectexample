@@ -6,6 +6,7 @@ import com.example.springprojectexample.pojo.AdmissionDetails;
 import com.example.springprojectexample.pojo.DoctorDetails;
 import com.example.springprojectexample.repository.AdmissionRepository;
 import com.example.springprojectexample.repository.DoctorRepository;
+import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -14,6 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+@Log4j2
 @Service
 public class DoctorService {
 
@@ -41,10 +43,12 @@ public class DoctorService {
             admissionDetailsList.add(admissionDetails);
         }
         doctorDetails.setAdmissionDetailsList(admissionDetailsList);
+        log.info("Doctor Details: {}",doctorDetails);
         return doctorDetails;
     }
 
     public void deleteDoctorById(Long doctorId) {
+        log.info("Deleted Doctor Record: {}",doctorId);
         doctorRepository.deleteById(doctorId);
     }
 
@@ -62,6 +66,7 @@ public class DoctorService {
         DoctorDetails updatedDoctorRecord = new DoctorDetails();
         BeanUtils.copyProperties(updatedDoctorDetails, updatedDoctorRecord);
 
+        log.info("Updated Doctor Details: {}",updatedDoctorRecord);
         return updatedDoctorRecord;
     }
 }
