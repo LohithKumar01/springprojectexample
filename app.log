@@ -1,0 +1,2 @@
+11:02:50.749 [http-nio-8080-exec-6] INFO  com.example.springprojectexample.controller.PatientController - Patient Record Found: 4
+11:02:50.808 [http-nio-8080-exec-6] INFO  com.example.springprojectexample.service.AdmissionService - Admission Details by PatientId: [AdmissionDetails(id=4, admissionDate=2023-09-12, dischargeDate=2023-09-18, diagnosis=Fractured arm, doctorId=null, patientDetails=null, patientId=null)]
