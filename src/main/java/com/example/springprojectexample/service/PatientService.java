@@ -6,6 +6,7 @@ import com.example.springprojectexample.pojo.AdmissionDetails;
 import com.example.springprojectexample.pojo.PatientCreditDetails;
 import com.example.springprojectexample.pojo.PatientDetails;
 import com.example.springprojectexample.repository.PatientRepository;
+import com.example.springprojectexample.validation.PatientValidator;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -21,8 +22,11 @@ public class PatientService {
     private AdmissionService admissionService;
     @Autowired
     private PatientClient patientClient;
+    @Autowired
+    private PatientValidator patientValidator;
 
     public PatientDetails createPatient(PatientDetails patient) {
+        patientValidator.validatePatientRequest(patient);   //Need to validate before inserting the request data
 
         Patient newPatient = new Patient();
         newPatient.setFirstName(patient.getFirstName());

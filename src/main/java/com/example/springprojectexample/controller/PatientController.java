@@ -2,15 +2,17 @@ package com.example.springprojectexample.controller;
 
 import com.example.springprojectexample.pojo.PatientDetails;
 import com.example.springprojectexample.service.PatientService;
+import com.example.springprojectexample.validation.PatientValidator;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
 @Log4j2
 @RestController
 public class PatientController {
     @Autowired
     private PatientService patientService;
+    @Autowired
+    private PatientValidator patientValidator;
 
     @GetMapping("/patient/{id}")
     public PatientDetails getPatient(@PathVariable("id") Long id) {
