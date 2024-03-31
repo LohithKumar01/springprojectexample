@@ -1,7 +1,9 @@
 package com.example.springprojectexample.service;
 
+import com.example.springprojectexample.client.PatientClient;
 import com.example.springprojectexample.entity.Patient;
 import com.example.springprojectexample.pojo.AdmissionDetails;
+import com.example.springprojectexample.pojo.PatientCreditDetails;
 import com.example.springprojectexample.pojo.PatientDetails;
 import com.example.springprojectexample.repository.PatientRepository;
 import org.springframework.beans.BeanUtils;
@@ -17,6 +19,8 @@ public class PatientService {
     private PatientRepository patientRepository;        //Controller -> when url hits it goes to controller.
     @Autowired
     private AdmissionService admissionService;
+    @Autowired
+    private PatientClient patientClient;
 
     public PatientDetails createPatient(PatientDetails patient) {
 
@@ -33,10 +37,17 @@ public class PatientService {
 
         Patient savedPatient = patientRepository.save(newPatient);  //Saving Created data to Repository
 
-        PatientDetails updatedPatient = new PatientDetails();
-        BeanUtils.copyProperties(savedPatient, updatedPatient);
+        PatientCreditDetails newPatientDetails = new PatientCreditDetails();
+        newPatientDetails.setId(savedPatient.getId());
+        newPatientDetails.setSsn(patient.getSsn());
+        newPatientDetails.setCreditScore(patient.getCreditScore());
 
-        return updatedPatient;
+        patientClient.createPatientDetails(newPatientDetails);
+        PatientDetails patientDetails=new PatientDetails();
+        BeanUtils.copyProperties(savedPatient,patientDetails);
+        patientDetails.setSsn(newPatientDetails.getSsn());
+        patientDetails.setCreditScore(newPatientDetails.getCreditScore());
+        return patientDetails;
     }
 
     public PatientDetails getPatient(Long id) {
@@ -50,6 +61,9 @@ public class PatientService {
         List<AdmissionDetails> admissionsDetailsByPatientIdList = admissionService.getAdmissionsDetailsByPatientId(id);
         //Set Admission details list in pojo with  admission details by patient id list
         patientDetails.setAdmissionDetailsList(admissionsDetailsByPatientIdList);
+        PatientCreditDetails details = patientClient.getPatientDetails(id);
+        patientDetails.setSsn(details.getSsn());
+        patientDetails.setCreditScore(details.getCreditScore());
 
         return patientDetails;          //We can't return entity so, we create new pojo object and return that.
     }

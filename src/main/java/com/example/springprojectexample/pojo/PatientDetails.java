@@ -23,5 +23,7 @@ public class PatientDetails {
     private String allergies;
     private Integer height;
     private Integer weight;
+    private String ssn;
+    private int creditScore;
     private List<AdmissionDetails> AdmissionDetailsList;
 }
