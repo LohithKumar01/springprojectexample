@@ -5,11 +5,11 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class ApplicationError {
+public class PatientError {
     private String message;
     private Long errorCode;
 
-    public ApplicationError(String message,Long errorCode){
+    public PatientError(String message, Long errorCode){
         this.message = message;
         this.errorCode = errorCode;
     }

@@ -1,2 +1,7 @@
-11:02:50.749 [http-nio-8080-exec-6] INFO  com.example.springprojectexample.controller.PatientController - Patient Record Found: 4
-11:02:50.808 [http-nio-8080-exec-6] INFO  com.example.springprojectexample.service.AdmissionService - Admission Details by PatientId: [AdmissionDetails(id=4, admissionDate=2023-09-12, dischargeDate=2023-09-18, diagnosis=Fractured arm, doctorId=null, patientDetails=null, patientId=null)]
+22:33:29.429 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:33:29.444 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+22:33:29.446 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+22:33:29.688 [http-nio-8080-exec-1] INFO  com.example.springprojectexample.controller.PatientController - New Patient Details: PatientDetails(id=null, firstName=Friday, lastName=Potts, gender=F, birthDate=1996-08-12, city=New York, provinceId=NY, allergies=Cancer, height=155, weight=68, ssn=453-78-4258, creditScore=775, AdmissionDetailsList=null)
+23:02:01.047 [SpringApplicationShutdownHook] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+23:02:01.051 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+23:02:01.081 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
