@@ -6,12 +6,15 @@ import com.example.springprojectexample.pojo.AdmissionDetails;
 import com.example.springprojectexample.pojo.PatientCreditDetails;
 import com.example.springprojectexample.pojo.PatientDetails;
 import com.example.springprojectexample.repository.PatientRepository;
+import com.example.springprojectexample.util.AsyncSpanner;
 import com.example.springprojectexample.validation.PatientValidator;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.Future;
 
 @Service
 public class PatientService {
@@ -24,6 +27,8 @@ public class PatientService {
     private PatientClient patientClient;
     @Autowired
     private PatientValidator patientValidator;
+    @Autowired
+    private AsyncSpanner asyncSpanner;
 
     public PatientDetails createPatient(PatientDetails patient) {
         patientValidator.validatePatientRequest(patient);   //Need to validate before inserting the request data
@@ -54,23 +59,24 @@ public class PatientService {
         return patientDetails;
     }
 
-    public PatientDetails getPatient(Long id) {
+    public PatientDetails getPatient(Long id) throws ExecutionException, InterruptedException {
         Patient patientById = patientRepository.findById(id).orElse(null);  //Connect to repository to get details.
         if (patientById == null) {
             throw new RuntimeException("No Patient Found.");        //If id not found throw exception.
         }
+        Future<PatientCreditDetails> detailsFuture = asyncSpanner.getPatientDetails(id);
+
         PatientDetails patientDetails = new PatientDetails();     //Copying Entity properties to Pojo
         BeanUtils.copyProperties(patientById, patientDetails);
 
         List<AdmissionDetails> admissionsDetailsByPatientIdList = admissionService.getAdmissionsDetailsByPatientId(id);
         //Set Admission details list in pojo with  admission details by patient id list
         patientDetails.setAdmissionDetailsList(admissionsDetailsByPatientIdList);
-        PatientCreditDetails details = patientClient.getPatientDetails(id);
-        patientDetails.setSsn(details.getSsn());
-        patientDetails.setCreditScore(details.getCreditScore());
+        PatientCreditDetails creditDetails = detailsFuture.get();
+        patientDetails.setSsn(creditDetails.getSsn());
+        patientDetails.setCreditScore(creditDetails.getCreditScore());
 
         return patientDetails;          //We can't return entity so, we create new pojo object and return that.
     }
-
 
 }

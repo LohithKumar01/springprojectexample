@@ -22,8 +22,7 @@ public class PatientExceptionHandler {
 
     @ExceptionHandler(RuntimeException.class)
     public ResponseEntity<?> handleRunTimeException(RuntimeException e){
-        e.printStackTrace();
-        return new ResponseEntity<>(new PatientError("DOB should not be null",400L), HttpStatus.BAD_REQUEST);
+        return new ResponseEntity<>(new PatientError(e.getMessage(),400L), HttpStatus.BAD_REQUEST);
     }
 
 

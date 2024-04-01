@@ -15,6 +15,7 @@ public class PatientValidator {
         if (StringUtils.isEmpty(patientDetails.getLastName())){
             throw new RuntimeException("Last Name Should not be null");
         }
+
 //        LocalDate birthDate = patientDetails.getBirthDate();
 //        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-mm-dd");
 //        String dateFormat = "\\d{4}-\\d{2}-\\d{2}";
@@ -26,6 +27,7 @@ public class PatientValidator {
 //        }
 
         validateSSN(patientDetails);
+
     }
 
     private static void validateSSN(PatientDetails patientDetails) {
