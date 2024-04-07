@@ -1,5 +1,6 @@
 package com.example.springprojectexample.service;
 
+import com.example.springprojectexample.aop.LogExecutionTime;
 import com.example.springprojectexample.entity.Admission;
 import com.example.springprojectexample.entity.Patient;
 import com.example.springprojectexample.pojo.AdmissionDetails;
@@ -49,6 +50,7 @@ public class AdmissionService {
         return newAdmissionDetails;
     }
 
+    @LogExecutionTime
     public List<AdmissionDetails> getAdmissionsDetailsByPatientId(Long patientId) {
         //Get values from admission repository by patient id and saved it in a list
         List<Admission> admissionsList = admissionRepository.getAdmissionsByPatientId(patientId);
@@ -66,6 +68,7 @@ public class AdmissionService {
         return admissionDetailsList;
     }
 
+    @LogExecutionTime
     public void deleteAdmissionByPatientId(Long patientID) {
         log.info("Deleting Patient by patientId: {}",patientID);
         admissionRepository.deleteAdmissionByPatientId(patientID);

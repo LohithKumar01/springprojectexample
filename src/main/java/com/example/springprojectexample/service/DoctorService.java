@@ -1,5 +1,6 @@
 package com.example.springprojectexample.service;
 
+import com.example.springprojectexample.aop.LogExecutionTime;
 import com.example.springprojectexample.entity.Admission;
 import com.example.springprojectexample.entity.Doctor;
 import com.example.springprojectexample.pojo.AdmissionDetails;
@@ -26,6 +27,7 @@ public class DoctorService {
     @Autowired
     private AdmissionService admissionService;
 
+    @LogExecutionTime
     public DoctorDetails getDoctorDetailsById(Long doctorId) {
         Optional<Doctor> doctorOptional = doctorRepository.findById(doctorId);
         if (doctorOptional.isEmpty()){

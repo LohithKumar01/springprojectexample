@@ -11,11 +11,19 @@ public class PatientClient {
     @Autowired
     private RestTemplate restTemplate;
 
-    public PatientCreditDetails getPatientDetails(Long patientId){
-        ResponseEntity<PatientCreditDetails> responseEntity = restTemplate.exchange(buildUrl(patientId), HttpMethod.GET, buildHttpEntity(), PatientCreditDetails.class);
-        HttpStatus statusCode = responseEntity.getStatusCode();
-        System.out.println(statusCode);
-        return responseEntity.getBody();
+    public PatientCreditDetails getPatientDetails(Long patientId) {
+        try {
+            ResponseEntity<PatientCreditDetails> responseEntity = restTemplate.exchange(buildUrl(patientId), HttpMethod.GET, buildHttpEntity(), PatientCreditDetails.class);
+            HttpStatus statusCode = responseEntity.getStatusCode();
+            if (statusCode != HttpStatus.OK) {
+                return null;
+            }
+            System.out.println(statusCode);
+            return responseEntity.getBody();
+        } catch (Exception e){
+            e.printStackTrace();
+            return null;
+        }
     }
     public void createPatientDetails(PatientCreditDetails patientCreditDetails){
         HttpHeaders headers = new HttpHeaders();

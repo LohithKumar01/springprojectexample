@@ -7,6 +7,7 @@ import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.concurrent.ExecutionException;
 
 @Log4j2
@@ -21,6 +22,17 @@ public class PatientController {
     public PatientDetails getPatient(@PathVariable("id") Long id) throws ExecutionException, InterruptedException {
         log.info("Patient Record Found: {}", id);
         return patientService.getPatient(id);
+    }
+
+    @GetMapping("/patient/list/export")
+    public String exportPatientListToFile(){
+        List<PatientDetails> patientDetailsList = patientService.getPatientList();
+        return patientService.exportPatientList(patientDetailsList);
+    }
+
+    @GetMapping("/patient/list")
+    public List<PatientDetails> getPatientList(){
+        return patientService.getPatientList();
     }
 
     @DeleteMapping("/patient")
