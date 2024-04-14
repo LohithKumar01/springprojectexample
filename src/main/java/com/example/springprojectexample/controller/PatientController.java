@@ -1,5 +1,6 @@
 package com.example.springprojectexample.controller;
 
+import com.example.springprojectexample.aop.LogExecutionTime;
 import com.example.springprojectexample.pojo.PatientDetails;
 import com.example.springprojectexample.service.PatientService;
 import com.example.springprojectexample.validation.PatientValidator;
@@ -19,6 +20,7 @@ public class PatientController {
     private PatientValidator patientValidator;
 
     @GetMapping("/patient/{id}")
+    @LogExecutionTime
     public PatientDetails getPatient(@PathVariable("id") Long id) throws ExecutionException, InterruptedException {
         log.info("Patient Record Found: {}", id);
         return patientService.getPatient(id);

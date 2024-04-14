@@ -2002,3 +2002,567 @@ execution(*com.example.springprojectexample.service..*(..))
 22:56:41.905 [http-nio-8080-exec-5] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.getPatient executed in 41ms
 22:56:41.905 [http-nio-8080-exec-5] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 41ms
 22:56:41.905 [http-nio-8080-exec-5] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 41ms
+19:22:43.342 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - Starting SpringprojectexampleApplication using Java 11.0.22 on DESKTOP-HINNF83 with PID 13716 (C:\Users\dell\Java\springprojectexample\target\classes started by dell in C:\Users\dell\Java\springprojectexample)
+19:22:43.342 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - Starting SpringprojectexampleApplication using Java 11.0.22 on DESKTOP-HINNF83 with PID 13716 (C:\Users\dell\Java\springprojectexample\target\classes started by dell in C:\Users\dell\Java\springprojectexample)
+19:22:43.399 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - No active profile set, falling back to 1 default profile: "default"
+19:22:43.399 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - No active profile set, falling back to 1 default profile: "default"
+19:23:12.173 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - Started SpringprojectexampleApplication in 31.814 seconds (JVM running for 42.476)
+19:23:12.173 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - Started SpringprojectexampleApplication in 31.814 seconds (JVM running for 42.476)
+19:26:50.520 [http-nio-8080-exec-6] INFO  com.example.springprojectexample.controller.PatientController - Patient Record Found: 1
+19:26:50.520 [http-nio-8080-exec-6] INFO  com.example.springprojectexample.controller.PatientController - Patient Record Found: 1
+19:26:51.104 [http-nio-8080-exec-6] INFO  com.example.springprojectexample.service.AdmissionService - Admission Details by PatientId: []
+19:26:51.104 [http-nio-8080-exec-6] INFO  com.example.springprojectexample.service.AdmissionService - Admission Details by PatientId: []
+19:26:51.169 [http-nio-8080-exec-6] INFO  com.example.springprojectexample.aop.MethodExecutionTime - List com.example.springprojectexample.service.AdmissionService.getAdmissionsDetailsByPatientId(Long) executed in 275ms
+19:26:51.169 [http-nio-8080-exec-6] INFO  com.example.springprojectexample.aop.MethodExecutionTime - List com.example.springprojectexample.service.AdmissionService.getAdmissionsDetailsByPatientId(Long) executed in 275ms
+19:26:51.505 [http-nio-8080-exec-6] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - AdmissionService.getAdmissionsDetailsByPatientId executed in 652ms
+19:26:51.505 [http-nio-8080-exec-6] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - AdmissionService.getAdmissionsDetailsByPatientId executed in 652ms
+19:26:51.506 [http-nio-8080-exec-6] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - List com.example.springprojectexample.service.AdmissionService.getAdmissionsDetailsByPatientId(Long) executed in 652ms
+19:26:51.506 [http-nio-8080-exec-6] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - List com.example.springprojectexample.service.AdmissionService.getAdmissionsDetailsByPatientId(Long) executed in 652ms
+19:26:52.138 [http-nio-8080-exec-6] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 1616ms
+19:26:52.138 [http-nio-8080-exec-6] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 1616ms
+19:26:52.273 [http-nio-8080-exec-6] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.getPatient executed in 1752ms
+19:26:52.273 [http-nio-8080-exec-6] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.getPatient executed in 1752ms
+19:26:52.276 [http-nio-8080-exec-6] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 1752ms
+19:26:52.276 [http-nio-8080-exec-6] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 1752ms
+19:26:52.277 [http-nio-8080-exec-6] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.getPatient(Long) executed in 1772ms
+19:26:52.277 [http-nio-8080-exec-6] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.getPatient(Long) executed in 1772ms
+19:29:31.206 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - Starting SpringprojectexampleApplication using Java 11.0.22 on DESKTOP-HINNF83 with PID 17196 (C:\Users\dell\Java\springprojectexample\target\classes started by dell in C:\Users\dell\Java\springprojectexample)
+19:29:31.206 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - Starting SpringprojectexampleApplication using Java 11.0.22 on DESKTOP-HINNF83 with PID 17196 (C:\Users\dell\Java\springprojectexample\target\classes started by dell in C:\Users\dell\Java\springprojectexample)
+19:29:31.227 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - No active profile set, falling back to 1 default profile: "default"
+19:29:31.227 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - No active profile set, falling back to 1 default profile: "default"
+19:29:35.418 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'healthEndpointGroupsBeanPostProcessor' defined in class path resource [org/springframework/boot/actuate/autoconfigure/health/HealthEndpointConfiguration.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is java.lang.IllegalStateException: Returning argument name 'result' was not bound in advice arguments
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:537) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:270) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:762) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:567) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.8.jar:2.6.8]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745) ~[spring-boot-2.6.8.jar:2.6.8]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420) ~[spring-boot-2.6.8.jar:2.6.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.6.8.jar:2.6.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317) ~[spring-boot-2.6.8.jar:2.6.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.6.8.jar:2.6.8]
+	at com.example.springprojectexample.SpringprojectexampleApplication.main(SpringprojectexampleApplication.java:9) ~[classes/:?]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is java.lang.IllegalStateException: Returning argument name 'result' was not bound in advice arguments
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:537) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:410) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:111) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:92) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:255) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1160) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1135) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531) ~[spring-beans-5.3.20.jar:5.3.20]
+	... 14 more
+Caused by: java.lang.IllegalStateException: Returning argument name 'result' was not bound in advice arguments
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.bindExplicitArguments(AbstractAspectJAdvice.java:484) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.bindArgumentsByName(AbstractAspectJAdvice.java:435) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.calculateArgumentBindings(AbstractAspectJAdvice.java:386) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory.getAdvice(ReflectiveAspectJAdvisorFactory.java:309) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.aspectj.annotation.InstantiationModelAwarePointcutAdvisorImpl.instantiateAdvice(InstantiationModelAwarePointcutAdvisorImpl.java:149) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.aspectj.annotation.InstantiationModelAwarePointcutAdvisorImpl.<init>(InstantiationModelAwarePointcutAdvisorImpl.java:113) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory.getAdvisor(ReflectiveAspectJAdvisorFactory.java:213) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory.getAdvisors(ReflectiveAspectJAdvisorFactory.java:144) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.aspectj.annotation.BeanFactoryAspectJAdvisorsBuilder.buildAspectJAdvisors(BeanFactoryAspectJAdvisorsBuilder.java:110) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:95) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:255) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1160) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1135) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:410) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:111) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:92) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:255) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1160) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1135) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531) ~[spring-beans-5.3.20.jar:5.3.20]
+	... 14 more
+19:31:50.401 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - Starting SpringprojectexampleApplication using Java 11.0.22 on DESKTOP-HINNF83 with PID 10064 (C:\Users\dell\Java\springprojectexample\target\classes started by dell in C:\Users\dell\Java\springprojectexample)
+19:31:50.401 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - Starting SpringprojectexampleApplication using Java 11.0.22 on DESKTOP-HINNF83 with PID 10064 (C:\Users\dell\Java\springprojectexample\target\classes started by dell in C:\Users\dell\Java\springprojectexample)
+19:31:50.425 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - No active profile set, falling back to 1 default profile: "default"
+19:31:50.425 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - No active profile set, falling back to 1 default profile: "default"
+19:31:53.115 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'healthEndpointGroupsBeanPostProcessor' defined in class path resource [org/springframework/boot/actuate/autoconfigure/health/HealthEndpointConfiguration.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is java.lang.IllegalStateException: Returning argument name 'result' was not bound in advice arguments
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:537) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:270) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:762) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:567) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.8.jar:2.6.8]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745) ~[spring-boot-2.6.8.jar:2.6.8]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420) ~[spring-boot-2.6.8.jar:2.6.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.6.8.jar:2.6.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317) ~[spring-boot-2.6.8.jar:2.6.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.6.8.jar:2.6.8]
+	at com.example.springprojectexample.SpringprojectexampleApplication.main(SpringprojectexampleApplication.java:9) ~[classes/:?]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is java.lang.IllegalStateException: Returning argument name 'result' was not bound in advice arguments
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:537) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:410) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:111) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:92) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:255) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1160) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1135) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531) ~[spring-beans-5.3.20.jar:5.3.20]
+	... 14 more
+Caused by: java.lang.IllegalStateException: Returning argument name 'result' was not bound in advice arguments
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.bindExplicitArguments(AbstractAspectJAdvice.java:484) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.bindArgumentsByName(AbstractAspectJAdvice.java:435) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.calculateArgumentBindings(AbstractAspectJAdvice.java:386) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory.getAdvice(ReflectiveAspectJAdvisorFactory.java:309) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.aspectj.annotation.InstantiationModelAwarePointcutAdvisorImpl.instantiateAdvice(InstantiationModelAwarePointcutAdvisorImpl.java:149) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.aspectj.annotation.InstantiationModelAwarePointcutAdvisorImpl.<init>(InstantiationModelAwarePointcutAdvisorImpl.java:113) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory.getAdvisor(ReflectiveAspectJAdvisorFactory.java:213) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory.getAdvisors(ReflectiveAspectJAdvisorFactory.java:144) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.aspectj.annotation.BeanFactoryAspectJAdvisorsBuilder.buildAspectJAdvisors(BeanFactoryAspectJAdvisorsBuilder.java:110) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:95) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:255) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1160) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1135) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:410) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:111) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:92) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:255) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1160) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1135) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531) ~[spring-beans-5.3.20.jar:5.3.20]
+	... 14 more
+19:33:01.505 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - Starting SpringprojectexampleApplication using Java 11.0.22 on DESKTOP-HINNF83 with PID 11544 (C:\Users\dell\Java\springprojectexample\target\classes started by dell in C:\Users\dell\Java\springprojectexample)
+19:33:01.505 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - Starting SpringprojectexampleApplication using Java 11.0.22 on DESKTOP-HINNF83 with PID 11544 (C:\Users\dell\Java\springprojectexample\target\classes started by dell in C:\Users\dell\Java\springprojectexample)
+19:33:01.532 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - No active profile set, falling back to 1 default profile: "default"
+19:33:01.532 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - No active profile set, falling back to 1 default profile: "default"
+19:33:12.291 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - Started SpringprojectexampleApplication in 11.551 seconds (JVM running for 13.226)
+19:33:12.291 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - Started SpringprojectexampleApplication in 11.551 seconds (JVM running for 13.226)
+19:33:20.230 [http-nio-8080-exec-1] INFO  com.example.springprojectexample.controller.PatientController - Patient Record Found: 1
+19:33:20.230 [http-nio-8080-exec-1] INFO  com.example.springprojectexample.controller.PatientController - Patient Record Found: 1
+19:33:20.564 [http-nio-8080-exec-1] INFO  com.example.springprojectexample.service.AdmissionService - Admission Details by PatientId: []
+19:33:20.564 [http-nio-8080-exec-1] INFO  com.example.springprojectexample.service.AdmissionService - Admission Details by PatientId: []
+19:33:20.580 [http-nio-8080-exec-1] INFO  com.example.springprojectexample.aop.MethodExecutionTime - List com.example.springprojectexample.service.AdmissionService.getAdmissionsDetailsByPatientId(Long) executed in 124ms
+19:33:20.580 [http-nio-8080-exec-1] INFO  com.example.springprojectexample.aop.MethodExecutionTime - List com.example.springprojectexample.service.AdmissionService.getAdmissionsDetailsByPatientId(Long) executed in 124ms
+19:33:20.630 [http-nio-8080-exec-1] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - AdmissionService.getAdmissionsDetailsByPatientId executed in 140ms
+19:33:20.630 [http-nio-8080-exec-1] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - AdmissionService.getAdmissionsDetailsByPatientId executed in 140ms
+19:33:20.632 [http-nio-8080-exec-1] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - List com.example.springprojectexample.service.AdmissionService.getAdmissionsDetailsByPatientId(Long) executed in 140ms
+19:33:20.632 [http-nio-8080-exec-1] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - List com.example.springprojectexample.service.AdmissionService.getAdmissionsDetailsByPatientId(Long) executed in 140ms
+19:33:21.240 [http-nio-8080-exec-1] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 1008ms
+19:33:21.240 [http-nio-8080-exec-1] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 1008ms
+19:33:21.291 [http-nio-8080-exec-1] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.getPatient executed in 1059ms
+19:33:21.291 [http-nio-8080-exec-1] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.getPatient executed in 1059ms
+19:33:21.291 [http-nio-8080-exec-1] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 1059ms
+19:33:21.291 [http-nio-8080-exec-1] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 1059ms
+19:33:21.292 [http-nio-8080-exec-1] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.getPatient(Long) executed in 1078ms
+19:33:21.292 [http-nio-8080-exec-1] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.getPatient(Long) executed in 1078ms
+19:33:50.829 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - Starting SpringprojectexampleApplication using Java 11.0.22 on DESKTOP-HINNF83 with PID 1396 (C:\Users\dell\Java\springprojectexample\target\classes started by dell in C:\Users\dell\Java\springprojectexample)
+19:33:50.829 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - Starting SpringprojectexampleApplication using Java 11.0.22 on DESKTOP-HINNF83 with PID 1396 (C:\Users\dell\Java\springprojectexample\target\classes started by dell in C:\Users\dell\Java\springprojectexample)
+19:33:50.844 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - No active profile set, falling back to 1 default profile: "default"
+19:33:50.844 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - No active profile set, falling back to 1 default profile: "default"
+19:34:05.958 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - Started SpringprojectexampleApplication in 15.844 seconds (JVM running for 17.837)
+19:34:05.958 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - Started SpringprojectexampleApplication in 15.844 seconds (JVM running for 17.837)
+19:34:33.214 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.controller.PatientController - Patient Record Found: 3
+19:34:33.214 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.controller.PatientController - Patient Record Found: 3
+19:34:33.595 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.service.AdmissionService - Admission Details by PatientId: [AdmissionDetails(id=3, admissionDate=2023-07-05, dischargeDate=2023-07-10, diagnosis=Pneumonia, doctorId=null, patientDetails=null, patientId=null)]
+19:34:33.595 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.service.AdmissionService - Admission Details by PatientId: [AdmissionDetails(id=3, admissionDate=2023-07-05, dischargeDate=2023-07-10, diagnosis=Pneumonia, doctorId=null, patientDetails=null, patientId=null)]
+19:34:33.663 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionTime - List com.example.springprojectexample.service.AdmissionService.getAdmissionsDetailsByPatientId(Long) executed in 203ms
+19:34:33.663 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionTime - List com.example.springprojectexample.service.AdmissionService.getAdmissionsDetailsByPatientId(Long) executed in 203ms
+19:34:33.678 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - AdmissionService.getAdmissionsDetailsByPatientId executed in 232ms
+19:34:33.678 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - AdmissionService.getAdmissionsDetailsByPatientId executed in 232ms
+19:34:33.684 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - List com.example.springprojectexample.service.AdmissionService.getAdmissionsDetailsByPatientId(Long) executed in 232ms
+19:34:33.684 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - List com.example.springprojectexample.service.AdmissionService.getAdmissionsDetailsByPatientId(Long) executed in 232ms
+19:34:34.288 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 1071ms
+19:34:34.288 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 1071ms
+19:34:34.344 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.getPatient executed in 1127ms
+19:34:34.344 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.getPatient executed in 1127ms
+19:34:34.344 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 1127ms
+19:34:34.344 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 1127ms
+19:34:34.345 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.getPatient(Long) executed in 1147ms
+19:34:34.345 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.getPatient(Long) executed in 1147ms
+19:37:20.950 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - Starting SpringprojectexampleApplication using Java 11.0.22 on DESKTOP-HINNF83 with PID 17116 (C:\Users\dell\Java\springprojectexample\target\classes started by dell in C:\Users\dell\Java\springprojectexample)
+19:37:20.950 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - Starting SpringprojectexampleApplication using Java 11.0.22 on DESKTOP-HINNF83 with PID 17116 (C:\Users\dell\Java\springprojectexample\target\classes started by dell in C:\Users\dell\Java\springprojectexample)
+19:37:20.969 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - No active profile set, falling back to 1 default profile: "default"
+19:37:20.969 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - No active profile set, falling back to 1 default profile: "default"
+19:37:32.135 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - Started SpringprojectexampleApplication in 11.869 seconds (JVM running for 13.492)
+19:37:32.135 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - Started SpringprojectexampleApplication in 11.869 seconds (JVM running for 13.492)
+19:37:37.207 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.controller.PatientController - Patient Record Found: 3
+19:37:37.207 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.controller.PatientController - Patient Record Found: 3
+19:37:37.665 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.service.AdmissionService - Admission Details by PatientId: [AdmissionDetails(id=3, admissionDate=2023-07-05, dischargeDate=2023-07-10, diagnosis=Pneumonia, doctorId=null, patientDetails=null, patientId=null)]
+19:37:37.665 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.service.AdmissionService - Admission Details by PatientId: [AdmissionDetails(id=3, admissionDate=2023-07-05, dischargeDate=2023-07-10, diagnosis=Pneumonia, doctorId=null, patientDetails=null, patientId=null)]
+19:37:37.767 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionTime - List com.example.springprojectexample.service.AdmissionService.getAdmissionsDetailsByPatientId(Long) executed in 170ms
+19:37:37.767 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionTime - List com.example.springprojectexample.service.AdmissionService.getAdmissionsDetailsByPatientId(Long) executed in 170ms
+19:37:37.803 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - AdmissionService.getAdmissionsDetailsByPatientId executed in 211ms
+19:37:37.803 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - AdmissionService.getAdmissionsDetailsByPatientId executed in 211ms
+19:37:37.810 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - List com.example.springprojectexample.service.AdmissionService.getAdmissionsDetailsByPatientId(Long) executed in 211ms
+19:37:37.810 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - List com.example.springprojectexample.service.AdmissionService.getAdmissionsDetailsByPatientId(Long) executed in 211ms
+19:37:38.085 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 873ms
+19:37:38.085 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 873ms
+19:37:38.176 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.getPatient executed in 964ms
+19:37:38.176 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.getPatient executed in 964ms
+19:37:38.181 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 964ms
+19:37:38.181 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 964ms
+19:37:38.181 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.getPatient(Long) executed in 998ms
+19:37:38.181 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.getPatient(Long) executed in 998ms
+19:47:13.103 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - Starting SpringprojectexampleApplication using Java 11.0.22 on DESKTOP-HINNF83 with PID 6728 (C:\Users\dell\Java\springprojectexample\target\classes started by dell in C:\Users\dell\Java\springprojectexample)
+19:47:13.103 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - Starting SpringprojectexampleApplication using Java 11.0.22 on DESKTOP-HINNF83 with PID 6728 (C:\Users\dell\Java\springprojectexample\target\classes started by dell in C:\Users\dell\Java\springprojectexample)
+19:47:13.144 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - No active profile set, falling back to 1 default profile: "default"
+19:47:13.144 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - No active profile set, falling back to 1 default profile: "default"
+19:47:33.460 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - Started SpringprojectexampleApplication in 21.646 seconds (JVM running for 25.018)
+19:47:33.460 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - Started SpringprojectexampleApplication in 21.646 seconds (JVM running for 25.018)
+19:53:15.198 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - Starting SpringprojectexampleApplication using Java 11.0.22 on DESKTOP-HINNF83 with PID 2532 (C:\Users\dell\Java\springprojectexample\target\classes started by dell in C:\Users\dell\Java\springprojectexample)
+19:53:15.198 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - Starting SpringprojectexampleApplication using Java 11.0.22 on DESKTOP-HINNF83 with PID 2532 (C:\Users\dell\Java\springprojectexample\target\classes started by dell in C:\Users\dell\Java\springprojectexample)
+19:53:15.220 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - No active profile set, falling back to 1 default profile: "default"
+19:53:15.220 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - No active profile set, falling back to 1 default profile: "default"
+19:53:19.320 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'healthEndpointGroupsBeanPostProcessor' defined in class path resource [org/springframework/boot/actuate/autoconfigure/health/HealthEndpointConfiguration.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error at ::0 formal unbound in pointcut 
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:537) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:270) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:762) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:567) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.8.jar:2.6.8]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745) ~[spring-boot-2.6.8.jar:2.6.8]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420) ~[spring-boot-2.6.8.jar:2.6.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.6.8.jar:2.6.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317) ~[spring-boot-2.6.8.jar:2.6.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.6.8.jar:2.6.8]
+	at com.example.springprojectexample.SpringprojectexampleApplication.main(SpringprojectexampleApplication.java:9) ~[classes/:?]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error at ::0 formal unbound in pointcut 
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:628) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:410) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:111) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:92) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:255) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1160) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1135) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531) ~[spring-beans-5.3.20.jar:5.3.20]
+	... 14 more
+Caused by: java.lang.IllegalArgumentException: error at ::0 formal unbound in pointcut 
+	at org.aspectj.weaver.tools.PointcutParser.parsePointcutExpression(PointcutParser.java:319) ~[aspectjweaver-1.9.7.jar:?]
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.buildPointcutExpression(AspectJExpressionPointcut.java:227) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.obtainPointcutExpression(AspectJExpressionPointcut.java:198) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.getClassFilter(AspectJExpressionPointcut.java:177) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:226) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:289) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.support.AopUtils.findAdvisorsThatCanApply(AopUtils.java:321) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findAdvisorsThatCanApply(AbstractAdvisorAutoProxyCreator.java:128) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:97) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:78) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:341) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:293) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:455) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:410) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:111) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:92) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:255) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1160) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1135) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531) ~[spring-beans-5.3.20.jar:5.3.20]
+	... 14 more
+20:03:55.297 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - Starting SpringprojectexampleApplication using Java 11.0.22 on DESKTOP-HINNF83 with PID 4180 (C:\Users\dell\Java\springprojectexample\target\classes started by dell in C:\Users\dell\Java\springprojectexample)
+20:03:55.297 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - Starting SpringprojectexampleApplication using Java 11.0.22 on DESKTOP-HINNF83 with PID 4180 (C:\Users\dell\Java\springprojectexample\target\classes started by dell in C:\Users\dell\Java\springprojectexample)
+20:03:55.315 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - No active profile set, falling back to 1 default profile: "default"
+20:03:55.315 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - No active profile set, falling back to 1 default profile: "default"
+20:03:58.783 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'healthEndpointGroupsBeanPostProcessor' defined in class path resource [org/springframework/boot/actuate/autoconfigure/health/HealthEndpointConfiguration.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error at ::0 formal unbound in pointcut 
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:537) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:270) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:762) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:567) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.8.jar:2.6.8]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745) ~[spring-boot-2.6.8.jar:2.6.8]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420) ~[spring-boot-2.6.8.jar:2.6.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.6.8.jar:2.6.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317) ~[spring-boot-2.6.8.jar:2.6.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.6.8.jar:2.6.8]
+	at com.example.springprojectexample.SpringprojectexampleApplication.main(SpringprojectexampleApplication.java:9) ~[classes/:?]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error at ::0 formal unbound in pointcut 
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:628) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:410) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:111) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:92) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:255) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1160) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1135) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531) ~[spring-beans-5.3.20.jar:5.3.20]
+	... 14 more
+Caused by: java.lang.IllegalArgumentException: error at ::0 formal unbound in pointcut 
+	at org.aspectj.weaver.tools.PointcutParser.parsePointcutExpression(PointcutParser.java:319) ~[aspectjweaver-1.9.7.jar:?]
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.buildPointcutExpression(AspectJExpressionPointcut.java:227) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.obtainPointcutExpression(AspectJExpressionPointcut.java:198) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.getClassFilter(AspectJExpressionPointcut.java:177) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:226) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:289) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.support.AopUtils.findAdvisorsThatCanApply(AopUtils.java:321) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findAdvisorsThatCanApply(AbstractAdvisorAutoProxyCreator.java:128) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:97) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:78) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:341) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:293) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:455) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:410) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:111) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:92) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:255) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1160) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1135) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531) ~[spring-beans-5.3.20.jar:5.3.20]
+	... 14 more
+20:51:34.910 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - Starting SpringprojectexampleApplication using Java 11.0.22 on DESKTOP-HINNF83 with PID 11168 (C:\Users\dell\Java\springprojectexample\target\classes started by dell in C:\Users\dell\Java\springprojectexample)
+20:51:34.910 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - Starting SpringprojectexampleApplication using Java 11.0.22 on DESKTOP-HINNF83 with PID 11168 (C:\Users\dell\Java\springprojectexample\target\classes started by dell in C:\Users\dell\Java\springprojectexample)
+20:51:34.925 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - No active profile set, falling back to 1 default profile: "default"
+20:51:34.925 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - No active profile set, falling back to 1 default profile: "default"
+20:51:53.180 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - Started SpringprojectexampleApplication in 19.199 seconds (JVM running for 21.49)
+20:51:53.180 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - Started SpringprojectexampleApplication in 19.199 seconds (JVM running for 21.49)
+20:52:01.730 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getPatient Arguments: [3]
+20:52:01.730 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getPatient Arguments: [3]
+20:52:01.742 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.controller.PatientController - Patient Record Found: 3
+20:52:01.742 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.controller.PatientController - Patient Record Found: 3
+20:52:01.744 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getPatient Arguments: [3]
+20:52:01.744 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getPatient Arguments: [3]
+20:52:01.955 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getAdmissionsDetailsByPatientId Arguments: [3]
+20:52:01.955 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getAdmissionsDetailsByPatientId Arguments: [3]
+20:52:02.051 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.service.AdmissionService - Admission Details by PatientId: [AdmissionDetails(id=3, admissionDate=2023-07-05, dischargeDate=2023-07-10, diagnosis=Pneumonia, doctorId=null, patientDetails=null, patientId=null)]
+20:52:02.051 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.service.AdmissionService - Admission Details by PatientId: [AdmissionDetails(id=3, admissionDate=2023-07-05, dischargeDate=2023-07-10, diagnosis=Pneumonia, doctorId=null, patientDetails=null, patientId=null)]
+20:52:02.111 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionTime - List com.example.springprojectexample.service.AdmissionService.getAdmissionsDetailsByPatientId(Long) executed in 123ms
+20:52:02.111 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionTime - List com.example.springprojectexample.service.AdmissionService.getAdmissionsDetailsByPatientId(Long) executed in 123ms
+20:52:02.136 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - AdmissionService.getAdmissionsDetailsByPatientId executed in 157ms
+20:52:02.136 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - AdmissionService.getAdmissionsDetailsByPatientId executed in 157ms
+20:52:02.137 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - List com.example.springprojectexample.service.AdmissionService.getAdmissionsDetailsByPatientId(Long) executed in 157ms
+20:52:02.137 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - List com.example.springprojectexample.service.AdmissionService.getAdmissionsDetailsByPatientId(Long) executed in 157ms
+20:52:02.677 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 933ms
+20:52:02.677 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 933ms
+20:52:02.677 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.getPatient executed in 935ms
+20:52:02.677 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.getPatient executed in 935ms
+20:52:02.678 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 935ms
+20:52:02.678 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 935ms
+20:52:02.678 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.getPatient(Long) executed in 947ms
+20:52:02.678 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.getPatient(Long) executed in 947ms
+20:54:38.969 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - Starting SpringprojectexampleApplication using Java 11.0.22 on DESKTOP-HINNF83 with PID 12272 (C:\Users\dell\Java\springprojectexample\target\classes started by dell in C:\Users\dell\Java\springprojectexample)
+20:54:38.969 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - Starting SpringprojectexampleApplication using Java 11.0.22 on DESKTOP-HINNF83 with PID 12272 (C:\Users\dell\Java\springprojectexample\target\classes started by dell in C:\Users\dell\Java\springprojectexample)
+20:54:39.028 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - No active profile set, falling back to 1 default profile: "default"
+20:54:39.028 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - No active profile set, falling back to 1 default profile: "default"
+20:54:50.381 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - Started SpringprojectexampleApplication in 12.445 seconds (JVM running for 15.47)
+20:54:50.381 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - Started SpringprojectexampleApplication in 12.445 seconds (JVM running for 15.47)
+20:54:55.732 [http-nio-8080-exec-1] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getPatient Input Arguments: [3]
+20:54:55.732 [http-nio-8080-exec-1] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getPatient Input Arguments: [3]
+20:54:55.748 [http-nio-8080-exec-1] INFO  com.example.springprojectexample.controller.PatientController - Patient Record Found: 3
+20:54:55.748 [http-nio-8080-exec-1] INFO  com.example.springprojectexample.controller.PatientController - Patient Record Found: 3
+20:54:55.750 [http-nio-8080-exec-1] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getPatient Input Arguments: [3]
+20:54:55.750 [http-nio-8080-exec-1] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getPatient Input Arguments: [3]
+20:54:56.119 [http-nio-8080-exec-1] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getAdmissionsDetailsByPatientId Input Arguments: [3]
+20:54:56.119 [http-nio-8080-exec-1] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getAdmissionsDetailsByPatientId Input Arguments: [3]
+20:54:56.281 [http-nio-8080-exec-1] INFO  com.example.springprojectexample.service.AdmissionService - Admission Details by PatientId: [AdmissionDetails(id=3, admissionDate=2023-07-05, dischargeDate=2023-07-10, diagnosis=Pneumonia, doctorId=null, patientDetails=null, patientId=null)]
+20:54:56.281 [http-nio-8080-exec-1] INFO  com.example.springprojectexample.service.AdmissionService - Admission Details by PatientId: [AdmissionDetails(id=3, admissionDate=2023-07-05, dischargeDate=2023-07-10, diagnosis=Pneumonia, doctorId=null, patientDetails=null, patientId=null)]
+20:54:56.482 [http-nio-8080-exec-1] INFO  com.example.springprojectexample.aop.MethodExecutionTime - List com.example.springprojectexample.service.AdmissionService.getAdmissionsDetailsByPatientId(Long) executed in 279ms
+20:54:56.482 [http-nio-8080-exec-1] INFO  com.example.springprojectexample.aop.MethodExecutionTime - List com.example.springprojectexample.service.AdmissionService.getAdmissionsDetailsByPatientId(Long) executed in 279ms
+21:06:02.328 [http-nio-8080-exec-1] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - AdmissionService.getAdmissionsDetailsByPatientId executed in 666178ms
+21:06:02.328 [http-nio-8080-exec-1] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - AdmissionService.getAdmissionsDetailsByPatientId executed in 666178ms
+21:06:02.330 [http-nio-8080-exec-1] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - List com.example.springprojectexample.service.AdmissionService.getAdmissionsDetailsByPatientId(Long) executed in 666178ms
+21:06:02.330 [http-nio-8080-exec-1] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - List com.example.springprojectexample.service.AdmissionService.getAdmissionsDetailsByPatientId(Long) executed in 666178ms
+21:06:02.450 [http-nio-8080-exec-1] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 666699ms
+21:06:02.450 [http-nio-8080-exec-1] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 666699ms
+21:06:02.450 [http-nio-8080-exec-1] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.getPatient executed in 666701ms
+21:06:02.450 [http-nio-8080-exec-1] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.getPatient executed in 666701ms
+21:06:02.451 [http-nio-8080-exec-1] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 666701ms
+21:06:02.451 [http-nio-8080-exec-1] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 666701ms
+21:06:02.451 [http-nio-8080-exec-1] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.getPatient(Long) executed in 666718ms
+21:06:02.451 [http-nio-8080-exec-1] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.getPatient(Long) executed in 666718ms
+21:06:13.639 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - Starting SpringprojectexampleApplication using Java 11.0.22 on DESKTOP-HINNF83 with PID 2012 (C:\Users\dell\Java\springprojectexample\target\classes started by dell in C:\Users\dell\Java\springprojectexample)
+21:06:13.639 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - Starting SpringprojectexampleApplication using Java 11.0.22 on DESKTOP-HINNF83 with PID 2012 (C:\Users\dell\Java\springprojectexample\target\classes started by dell in C:\Users\dell\Java\springprojectexample)
+21:06:13.658 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - No active profile set, falling back to 1 default profile: "default"
+21:06:13.658 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - No active profile set, falling back to 1 default profile: "default"
+21:06:23.994 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - Started SpringprojectexampleApplication in 11.091 seconds (JVM running for 12.766)
+21:06:23.994 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - Started SpringprojectexampleApplication in 11.091 seconds (JVM running for 12.766)
+21:06:30.177 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getPatient Input Arguments: [3]
+21:06:30.177 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getPatient Input Arguments: [3]
+21:06:30.187 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.controller.PatientController - Patient Record Found: 3
+21:06:30.187 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.controller.PatientController - Patient Record Found: 3
+21:06:30.188 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getPatient Input Arguments: [3]
+21:06:30.188 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getPatient Input Arguments: [3]
+21:06:30.384 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getAdmissionsDetailsByPatientId Input Arguments: [3]
+21:06:30.384 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getAdmissionsDetailsByPatientId Input Arguments: [3]
+21:06:30.474 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.service.AdmissionService - Admission Details by PatientId: [AdmissionDetails(id=3, admissionDate=2023-07-05, dischargeDate=2023-07-10, diagnosis=Pneumonia, doctorId=null, patientDetails=null, patientId=null)]
+21:06:30.474 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.service.AdmissionService - Admission Details by PatientId: [AdmissionDetails(id=3, admissionDate=2023-07-05, dischargeDate=2023-07-10, diagnosis=Pneumonia, doctorId=null, patientDetails=null, patientId=null)]
+21:06:30.555 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionTime - List com.example.springprojectexample.service.AdmissionService.getAdmissionsDetailsByPatientId(Long) executed in 148ms
+21:06:30.555 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionTime - List com.example.springprojectexample.service.AdmissionService.getAdmissionsDetailsByPatientId(Long) executed in 148ms
+21:06:30.728 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - AdmissionService.getAdmissionsDetailsByPatientId executed in 329ms
+21:06:30.728 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - AdmissionService.getAdmissionsDetailsByPatientId executed in 329ms
+21:06:30.729 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - List com.example.springprojectexample.service.AdmissionService.getAdmissionsDetailsByPatientId(Long) executed in 329ms
+21:06:30.729 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - List com.example.springprojectexample.service.AdmissionService.getAdmissionsDetailsByPatientId(Long) executed in 329ms
+21:06:30.794 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 605ms
+21:06:30.794 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 605ms
+21:06:30.801 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.getPatient executed in 613ms
+21:06:30.801 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.getPatient executed in 613ms
+21:06:30.802 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 613ms
+21:06:30.802 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 613ms
+21:06:30.802 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.getPatient(Long) executed in 624ms
+21:06:30.802 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.getPatient(Long) executed in 624ms
+21:08:42.160 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - Starting SpringprojectexampleApplication using Java 11.0.22 on DESKTOP-HINNF83 with PID 7840 (C:\Users\dell\Java\springprojectexample\target\classes started by dell in C:\Users\dell\Java\springprojectexample)
+21:08:42.160 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - Starting SpringprojectexampleApplication using Java 11.0.22 on DESKTOP-HINNF83 with PID 7840 (C:\Users\dell\Java\springprojectexample\target\classes started by dell in C:\Users\dell\Java\springprojectexample)
+21:08:42.176 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - No active profile set, falling back to 1 default profile: "default"
+21:08:42.176 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - No active profile set, falling back to 1 default profile: "default"
+21:08:52.830 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - Started SpringprojectexampleApplication in 11.446 seconds (JVM running for 13.083)
+21:08:52.830 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - Started SpringprojectexampleApplication in 11.446 seconds (JVM running for 13.083)
+21:08:59.436 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getPatient Input Arguments: [3]
+21:08:59.436 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getPatient Input Arguments: [3]
+21:08:59.449 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.controller.PatientController - Patient Record Found: 3
+21:08:59.449 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.controller.PatientController - Patient Record Found: 3
+21:08:59.450 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getPatient Input Arguments: [3]
+21:08:59.450 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getPatient Input Arguments: [3]
+21:08:59.670 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getAdmissionsDetailsByPatientId Input Arguments: [3]
+21:08:59.670 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getAdmissionsDetailsByPatientId Input Arguments: [3]
+21:08:59.772 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.service.AdmissionService - Admission Details by PatientId: [AdmissionDetails(id=3, admissionDate=2023-07-05, dischargeDate=2023-07-10, diagnosis=Pneumonia, doctorId=null, patientDetails=null, patientId=null)]
+21:08:59.772 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.service.AdmissionService - Admission Details by PatientId: [AdmissionDetails(id=3, admissionDate=2023-07-05, dischargeDate=2023-07-10, diagnosis=Pneumonia, doctorId=null, patientDetails=null, patientId=null)]
+21:08:59.875 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionTime - List com.example.springprojectexample.service.AdmissionService.getAdmissionsDetailsByPatientId(Long) executed in 183ms
+21:08:59.875 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionTime - List com.example.springprojectexample.service.AdmissionService.getAdmissionsDetailsByPatientId(Long) executed in 183ms
+21:08:59.939 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getAdmissionsDetailsByPatientId Output Arguments: [{"id":3,"admissionDate":[2023,7,5],"dischargeDate":[2023,7,10],"diagnosis":"Pneumonia"}]
+21:08:59.939 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getAdmissionsDetailsByPatientId Output Arguments: [{"id":3,"admissionDate":[2023,7,5],"dischargeDate":[2023,7,10],"diagnosis":"Pneumonia"}]
+21:08:59.964 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - AdmissionService.getAdmissionsDetailsByPatientId executed in 271ms
+21:08:59.964 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - AdmissionService.getAdmissionsDetailsByPatientId executed in 271ms
+21:08:59.966 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - List com.example.springprojectexample.service.AdmissionService.getAdmissionsDetailsByPatientId(Long) executed in 271ms
+21:08:59.966 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - List com.example.springprojectexample.service.AdmissionService.getAdmissionsDetailsByPatientId(Long) executed in 271ms
+21:09:00.076 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 626ms
+21:09:00.076 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 626ms
+21:09:00.086 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getPatient Output Arguments: {"id":3,"firstName":"Michael","lastName":"Johnson","gender":"M","birthDate":[1975,9,20],"city":"Chicago","provinceId":"IL","allergies":"Shellfish, Penicillin","height":175,"weight":80,"ssn":"345-67-8901","creditScore":680,"admissionDetailsList":[{"id":3,"admissionDate":[2023,7,5],"dischargeDate":[2023,7,10],"diagnosis":"Pneumonia"}]}
+21:09:00.086 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getPatient Output Arguments: {"id":3,"firstName":"Michael","lastName":"Johnson","gender":"M","birthDate":[1975,9,20],"city":"Chicago","provinceId":"IL","allergies":"Shellfish, Penicillin","height":175,"weight":80,"ssn":"345-67-8901","creditScore":680,"admissionDetailsList":[{"id":3,"admissionDate":[2023,7,5],"dischargeDate":[2023,7,10],"diagnosis":"Pneumonia"}]}
+21:09:00.086 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.getPatient executed in 637ms
+21:09:00.086 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.getPatient executed in 637ms
+21:09:00.087 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 637ms
+21:09:00.087 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 637ms
+21:09:00.088 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.getPatient(Long) executed in 650ms
+21:09:00.088 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.getPatient(Long) executed in 650ms
+21:09:00.088 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getPatient Output Arguments: {"id":3,"firstName":"Michael","lastName":"Johnson","gender":"M","birthDate":[1975,9,20],"city":"Chicago","provinceId":"IL","allergies":"Shellfish, Penicillin","height":175,"weight":80,"ssn":"345-67-8901","creditScore":680,"admissionDetailsList":[{"id":3,"admissionDate":[2023,7,5],"dischargeDate":[2023,7,10],"diagnosis":"Pneumonia"}]}
+21:09:00.088 [http-nio-8080-exec-2] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getPatient Output Arguments: {"id":3,"firstName":"Michael","lastName":"Johnson","gender":"M","birthDate":[1975,9,20],"city":"Chicago","provinceId":"IL","allergies":"Shellfish, Penicillin","height":175,"weight":80,"ssn":"345-67-8901","creditScore":680,"admissionDetailsList":[{"id":3,"admissionDate":[2023,7,5],"dischargeDate":[2023,7,10],"diagnosis":"Pneumonia"}]}
