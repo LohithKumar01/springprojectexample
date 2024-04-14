@@ -44,6 +44,7 @@ public class PatientController {
     }
 
     @PostMapping("/patient")
+    @LogExecutionTime
     public PatientDetails createPatient(@RequestBody PatientDetails patient) {
         log.info("New Patient Details: {}", patient);
         return patientService.createPatient(patient);

@@ -37,6 +37,7 @@ public class PatientService {
     @Autowired
     private AsyncSpanner asyncSpanner;
 
+    @LogExecutionTime
     public PatientDetails createPatient(PatientDetails patient) {
         patientValidator.validatePatientRequest(patient);   //Need to validate before inserting the request data
 

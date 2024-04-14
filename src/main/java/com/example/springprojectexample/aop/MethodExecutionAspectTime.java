@@ -46,14 +46,12 @@ public class MethodExecutionAspectTime {
             if (args != null && args.length >0){
                 inputArgumentString = objectMapper.writeValueAsString(args);
             }
-
-            log.info("Method Name: {} Input Arguments: {}",methodName,inputArgumentString);
             output = joinPoint.proceed();
             String outputArgumentString = "No Output";
             if (output != null){
                 outputArgumentString = objectMapper.writeValueAsString(output);
             }
-            log.info("Method Name: {} Output Arguments: {}",methodName,outputArgumentString);
+            log.info("Method Name: {} Input Arguments: {} Output Arguments: {}",methodName,inputArgumentString,outputArgumentString);
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -1,5 +1,6 @@
 package com.example.springprojectexample.controller;
 
+import com.example.springprojectexample.aop.LogExecutionTime;
 import com.example.springprojectexample.pojo.AdmissionDetails;
 import com.example.springprojectexample.service.AdmissionService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +20,7 @@ public class AdmissionController {
     }
 
     @GetMapping("/admission/patient/{id}")
+    @LogExecutionTime
     public List<AdmissionDetails> getAdmissionsDetailsByPatientId(@PathVariable("id") Long patientId) {
         return admissionService.getAdmissionsDetailsByPatientId(patientId);
     }
