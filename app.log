@@ -2692,3 +2692,771 @@ Caused by: java.lang.IllegalArgumentException: error at ::0 formal unbound in po
 21:48:28.195 [http-nio-8080-exec-3] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.getPatient(Long) executed in 580ms
 21:48:28.199 [http-nio-8080-exec-3] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getPatient Input Arguments: [3] Output Arguments: {"id":3,"firstName":"Michael","lastName":"Johnson","gender":"M","birthDate":[1975,9,20],"city":"Chicago","provinceId":"IL","allergies":"Shellfish, Penicillin","height":175,"weight":80,"ssn":"345-67-8901","creditScore":680,"admissionDetailsList":[{"id":3,"admissionDate":[2023,7,5],"dischargeDate":[2023,7,10],"diagnosis":"Pneumonia"}]}
 21:48:28.199 [http-nio-8080-exec-3] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getPatient Input Arguments: [3] Output Arguments: {"id":3,"firstName":"Michael","lastName":"Johnson","gender":"M","birthDate":[1975,9,20],"city":"Chicago","provinceId":"IL","allergies":"Shellfish, Penicillin","height":175,"weight":80,"ssn":"345-67-8901","creditScore":680,"admissionDetailsList":[{"id":3,"admissionDate":[2023,7,5],"dischargeDate":[2023,7,10],"diagnosis":"Pneumonia"}]}
+21:51:13.749 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - Starting SpringprojectexampleApplication using Java 11.0.22 on DESKTOP-HINNF83 with PID 7572 (C:\Users\dell\Java\springprojectexample\target\classes started by dell in C:\Users\dell\Java\springprojectexample)
+21:51:13.749 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - Starting SpringprojectexampleApplication using Java 11.0.22 on DESKTOP-HINNF83 with PID 7572 (C:\Users\dell\Java\springprojectexample\target\classes started by dell in C:\Users\dell\Java\springprojectexample)
+21:51:13.764 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - No active profile set, falling back to 1 default profile: "default"
+21:51:13.764 [main] INFO  com.example.springprojectexample.SpringprojectexampleApplication - No active profile set, falling back to 1 default profile: "default"
+21:51:19.182 [main] ERROR com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Exception during pool initialization.
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:829) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:449) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:242) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-4.0.3.jar:?]
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:159) ~[spring-jdbc-5.3.20.jar:5.3.20]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:117) ~[spring-jdbc-5.3.20.jar:5.3.20]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80) ~[spring-jdbc-5.3.20.jar:5.3.20]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:330) ~[spring-jdbc-5.3.20.jar:5.3.20]
+	at org.springframework.boot.jdbc.EmbeddedDatabaseConnection.isEmbedded(EmbeddedDatabaseConnection.java:162) ~[spring-boot-2.6.8.jar:2.6.8]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateDefaultDdlAutoProvider.getDefaultDdlAuto(HibernateDefaultDdlAutoProvider.java:42) ~[spring-boot-autoconfigure-2.6.8.jar:2.6.8]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration.lambda$getVendorProperties$1(HibernateJpaConfiguration.java:130) ~[spring-boot-autoconfigure-2.6.8.jar:2.6.8]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateSettings.getDdlAuto(HibernateSettings.java:41) ~[spring-boot-autoconfigure-2.6.8.jar:2.6.8]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties.determineDdlAuto(HibernateProperties.java:143) ~[spring-boot-autoconfigure-2.6.8.jar:2.6.8]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties.getAdditionalProperties(HibernateProperties.java:103) ~[spring-boot-autoconfigure-2.6.8.jar:2.6.8]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties.determineHibernateProperties(HibernateProperties.java:95) ~[spring-boot-autoconfigure-2.6.8.jar:2.6.8]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration.getVendorProperties(HibernateJpaConfiguration.java:132) ~[spring-boot-autoconfigure-2.6.8.jar:2.6.8]
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.entityManagerFactory(JpaBaseConfiguration.java:132) ~[spring-boot-autoconfigure-2.6.8.jar:2.6.8]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.8.jar:2.6.8]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745) ~[spring-boot-2.6.8.jar:2.6.8]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420) ~[spring-boot-2.6.8.jar:2.6.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.6.8.jar:2.6.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317) ~[spring-boot-2.6.8.jar:2.6.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.6.8.jar:2.6.8]
+	at com.example.springprojectexample.SpringprojectexampleApplication.main(SpringprojectexampleApplication.java:9) ~[classes/:?]
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:490) ~[?:?]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:120) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:949) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:819) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	... 48 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.PlainSocketImpl.waitForConnect(Native Method) ~[?:?]
+	at java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[?:?]
+	at java.net.Socket.connect(Socket.java:609) ~[?:?]
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:156) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:120) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:949) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:819) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	... 48 more
+21:51:21.005 [main] ERROR com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Exception during pool initialization.
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:829) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:449) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:242) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-4.0.3.jar:?]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:181) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:175) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:173) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.20.jar:5.3.20]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.20.jar:5.3.20]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.20.jar:5.3.20]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.20.jar:5.3.20]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.8.jar:2.6.8]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745) ~[spring-boot-2.6.8.jar:2.6.8]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420) ~[spring-boot-2.6.8.jar:2.6.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.6.8.jar:2.6.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317) ~[spring-boot-2.6.8.jar:2.6.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.6.8.jar:2.6.8]
+	at com.example.springprojectexample.SpringprojectexampleApplication.main(SpringprojectexampleApplication.java:9) ~[classes/:?]
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:490) ~[?:?]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:120) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:949) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:819) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	... 49 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.PlainSocketImpl.waitForConnect(Native Method) ~[?:?]
+	at java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[?:?]
+	at java.net.Socket.connect(Socket.java:609) ~[?:?]
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:156) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:120) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:949) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:819) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	... 49 more
+21:51:21.035 [main] ERROR org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Failed to initialize JPA EntityManagerFactory: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+21:51:21.144 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.8.jar:2.6.8]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745) ~[spring-boot-2.6.8.jar:2.6.8]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420) ~[spring-boot-2.6.8.jar:2.6.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.6.8.jar:2.6.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317) ~[spring-boot-2.6.8.jar:2.6.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.6.8.jar:2.6.8]
+	at com.example.springprojectexample.SpringprojectexampleApplication.main(SpringprojectexampleApplication.java:9) ~[classes/:?]
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:275) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:175) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:173) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.20.jar:5.3.20]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.20.jar:5.3.20]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.20.jar:5.3.20]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.20.jar:5.3.20]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.20.jar:5.3.20]
+	... 16 more
+Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when 'hibernate.dialect' not set
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:100) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:54) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:138) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:175) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:173) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.20.jar:5.3.20]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.20.jar:5.3.20]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.20.jar:5.3.20]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.20.jar:5.3.20]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.20.jar:5.3.20]
+	... 16 more
+12:42:41.748 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Starting PatientControllerTest using Java 11.0.22 on DESKTOP-HINNF83 with PID 5988 (started by dell in C:\Users\dell\Java\springprojectexample)
+12:42:41.748 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Starting PatientControllerTest using Java 11.0.22 on DESKTOP-HINNF83 with PID 5988 (started by dell in C:\Users\dell\Java\springprojectexample)
+12:42:41.761 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+12:42:41.761 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+12:42:53.975 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Started PatientControllerTest in 13.08 seconds (JVM running for 16.88)
+12:42:53.975 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Started PatientControllerTest in 13.08 seconds (JVM running for 16.88)
+12:48:02.831 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Starting PatientControllerTest using Java 11.0.22 on DESKTOP-HINNF83 with PID 11780 (started by dell in C:\Users\dell\Java\springprojectexample)
+12:48:02.831 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Starting PatientControllerTest using Java 11.0.22 on DESKTOP-HINNF83 with PID 11780 (started by dell in C:\Users\dell\Java\springprojectexample)
+12:48:02.844 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+12:48:02.844 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+12:48:13.756 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Started PatientControllerTest in 11.473 seconds (JVM running for 13.856)
+12:48:13.756 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Started PatientControllerTest in 11.473 seconds (JVM running for 13.856)
+12:51:11.290 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Starting PatientControllerTest using Java 11.0.22 on DESKTOP-HINNF83 with PID 7592 (started by dell in C:\Users\dell\Java\springprojectexample)
+12:51:11.290 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Starting PatientControllerTest using Java 11.0.22 on DESKTOP-HINNF83 with PID 7592 (started by dell in C:\Users\dell\Java\springprojectexample)
+12:51:11.307 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+12:51:11.307 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+12:51:21.573 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Started PatientControllerTest in 10.9 seconds (JVM running for 14.056)
+12:51:21.573 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Started PatientControllerTest in 10.9 seconds (JVM running for 14.056)
+12:51:22.164 [main] INFO  com.example.springprojectexample.controller.PatientController - New Patient Details: PatientDetails(id=null, firstName=Tony, lastName=Stark, gender=M, birthDate=1988-08-06, city=New York, provinceId=NY, allergies=HyperTension, height=176, weight=80, ssn=123-456-7891, creditScore=775, AdmissionDetailsList=null)
+12:51:22.164 [main] INFO  com.example.springprojectexample.controller.PatientController - New Patient Details: PatientDetails(id=null, firstName=Tony, lastName=Stark, gender=M, birthDate=1988-08-06, city=New York, provinceId=NY, allergies=HyperTension, height=176, weight=80, ssn=123-456-7891, creditScore=775, AdmissionDetailsList=null)
+12:51:22.295 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.createPatient executed in 81ms
+12:51:22.295 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.createPatient executed in 81ms
+12:51:22.303 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.createPatient(PatientDetails) executed in 81ms
+12:51:22.303 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.createPatient(PatientDetails) executed in 81ms
+12:51:22.304 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.createPatient(PatientDetails) executed in 151ms
+12:51:22.304 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.createPatient(PatientDetails) executed in 151ms
+12:51:22.304 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: createPatient Input Arguments: [{"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-456-7891","creditScore":775}] Output Arguments: No Output
+12:51:22.304 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: createPatient Input Arguments: [{"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-456-7891","creditScore":775}] Output Arguments: No Output
+12:53:00.906 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Starting PatientControllerTest using Java 11.0.22 on DESKTOP-HINNF83 with PID 12784 (started by dell in C:\Users\dell\Java\springprojectexample)
+12:53:00.906 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Starting PatientControllerTest using Java 11.0.22 on DESKTOP-HINNF83 with PID 12784 (started by dell in C:\Users\dell\Java\springprojectexample)
+12:53:00.922 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+12:53:00.922 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+12:53:11.354 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Started PatientControllerTest in 11.3 seconds (JVM running for 14.949)
+12:53:11.354 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Started PatientControllerTest in 11.3 seconds (JVM running for 14.949)
+12:53:11.903 [main] INFO  com.example.springprojectexample.controller.PatientController - New Patient Details: PatientDetails(id=null, firstName=Tony, lastName=Stark, gender=M, birthDate=1988-08-06, city=New York, provinceId=NY, allergies=HyperTension, height=176, weight=80, ssn=123-456-7891, creditScore=775, AdmissionDetailsList=null)
+12:53:11.903 [main] INFO  com.example.springprojectexample.controller.PatientController - New Patient Details: PatientDetails(id=null, firstName=Tony, lastName=Stark, gender=M, birthDate=1988-08-06, city=New York, provinceId=NY, allergies=HyperTension, height=176, weight=80, ssn=123-456-7891, creditScore=775, AdmissionDetailsList=null)
+12:53:12.022 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.createPatient executed in 45ms
+12:53:12.022 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.createPatient executed in 45ms
+12:53:12.035 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.createPatient(PatientDetails) executed in 45ms
+12:53:12.035 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.createPatient(PatientDetails) executed in 45ms
+12:53:12.037 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.createPatient(PatientDetails) executed in 149ms
+12:53:12.037 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.createPatient(PatientDetails) executed in 149ms
+12:53:12.037 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: createPatient Input Arguments: [{"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-456-7891","creditScore":775}] Output Arguments: No Output
+12:53:12.037 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: createPatient Input Arguments: [{"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-456-7891","creditScore":775}] Output Arguments: No Output
+12:53:53.575 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Starting PatientControllerTest using Java 11.0.22 on DESKTOP-HINNF83 with PID 11896 (started by dell in C:\Users\dell\Java\springprojectexample)
+12:53:53.575 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Starting PatientControllerTest using Java 11.0.22 on DESKTOP-HINNF83 with PID 11896 (started by dell in C:\Users\dell\Java\springprojectexample)
+12:53:53.589 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+12:53:53.589 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+12:54:03.327 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Started PatientControllerTest in 10.348 seconds (JVM running for 12.755)
+12:54:03.327 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Started PatientControllerTest in 10.348 seconds (JVM running for 12.755)
+12:54:03.809 [main] INFO  com.example.springprojectexample.controller.PatientController - New Patient Details: PatientDetails(id=null, firstName=Tony, lastName=Stark, gender=M, birthDate=1988-08-06, city=New York, provinceId=NY, allergies=HyperTension, height=176, weight=80, ssn=123-45-7891, creditScore=775, AdmissionDetailsList=null)
+12:54:03.809 [main] INFO  com.example.springprojectexample.controller.PatientController - New Patient Details: PatientDetails(id=null, firstName=Tony, lastName=Stark, gender=M, birthDate=1988-08-06, city=New York, provinceId=NY, allergies=HyperTension, height=176, weight=80, ssn=123-45-7891, creditScore=775, AdmissionDetailsList=null)
+12:54:04.105 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.createPatient executed in 246ms
+12:54:04.105 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.createPatient executed in 246ms
+12:54:04.113 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.createPatient(PatientDetails) executed in 246ms
+12:54:04.113 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.createPatient(PatientDetails) executed in 246ms
+12:54:04.114 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.createPatient(PatientDetails) executed in 317ms
+12:54:04.114 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.createPatient(PatientDetails) executed in 317ms
+12:54:04.115 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: createPatient Input Arguments: [{"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}] Output Arguments: No Output
+12:54:04.115 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: createPatient Input Arguments: [{"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}] Output Arguments: No Output
+12:54:46.414 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Starting PatientControllerTest using Java 11.0.22 on DESKTOP-HINNF83 with PID 3228 (started by dell in C:\Users\dell\Java\springprojectexample)
+12:54:46.414 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Starting PatientControllerTest using Java 11.0.22 on DESKTOP-HINNF83 with PID 3228 (started by dell in C:\Users\dell\Java\springprojectexample)
+12:54:46.428 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+12:54:46.428 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+12:54:55.341 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Started PatientControllerTest in 9.47 seconds (JVM running for 11.741)
+12:54:55.341 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Started PatientControllerTest in 9.47 seconds (JVM running for 11.741)
+12:54:55.812 [main] INFO  com.example.springprojectexample.controller.PatientController - New Patient Details: PatientDetails(id=null, firstName=Tony, lastName=Stark, gender=M, birthDate=1988-08-06, city=New York, provinceId=NY, allergies=HyperTension, height=176, weight=80, ssn=123-45-7891, creditScore=775, AdmissionDetailsList=null)
+12:54:55.812 [main] INFO  com.example.springprojectexample.controller.PatientController - New Patient Details: PatientDetails(id=null, firstName=Tony, lastName=Stark, gender=M, birthDate=1988-08-06, city=New York, provinceId=NY, allergies=HyperTension, height=176, weight=80, ssn=123-45-7891, creditScore=775, AdmissionDetailsList=null)
+12:54:56.171 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.createPatient executed in 197ms
+12:54:56.171 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.createPatient executed in 197ms
+12:54:56.199 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.createPatient(PatientDetails) executed in 197ms
+12:54:56.199 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.createPatient(PatientDetails) executed in 197ms
+12:54:56.201 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.createPatient(PatientDetails) executed in 403ms
+12:54:56.201 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.createPatient(PatientDetails) executed in 403ms
+12:54:56.202 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: createPatient Input Arguments: [{"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}] Output Arguments: No Output
+12:54:56.202 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: createPatient Input Arguments: [{"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}] Output Arguments: No Output
+12:56:20.751 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Starting PatientControllerTest using Java 11.0.22 on DESKTOP-HINNF83 with PID 9080 (started by dell in C:\Users\dell\Java\springprojectexample)
+12:56:20.751 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Starting PatientControllerTest using Java 11.0.22 on DESKTOP-HINNF83 with PID 9080 (started by dell in C:\Users\dell\Java\springprojectexample)
+12:56:20.765 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+12:56:20.765 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+12:56:29.792 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Started PatientControllerTest in 9.634 seconds (JVM running for 11.889)
+12:56:29.792 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Started PatientControllerTest in 9.634 seconds (JVM running for 11.889)
+12:56:30.201 [main] INFO  com.example.springprojectexample.controller.PatientController - New Patient Details: PatientDetails(id=null, firstName=Tony, lastName=Stark, gender=M, birthDate=1988-08-06, city=New York, provinceId=NY, allergies=HyperTension, height=176, weight=80, ssn=123-45-7891, creditScore=775, AdmissionDetailsList=null)
+12:56:30.201 [main] INFO  com.example.springprojectexample.controller.PatientController - New Patient Details: PatientDetails(id=null, firstName=Tony, lastName=Stark, gender=M, birthDate=1988-08-06, city=New York, provinceId=NY, allergies=HyperTension, height=176, weight=80, ssn=123-45-7891, creditScore=775, AdmissionDetailsList=null)
+12:56:30.538 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.createPatient executed in 290ms
+12:56:30.538 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.createPatient executed in 290ms
+12:56:30.546 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.createPatient(PatientDetails) executed in 290ms
+12:56:30.546 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.createPatient(PatientDetails) executed in 290ms
+12:56:30.547 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.createPatient(PatientDetails) executed in 359ms
+12:56:30.547 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.createPatient(PatientDetails) executed in 359ms
+12:56:30.547 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: createPatient Input Arguments: [{"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}] Output Arguments: No Output
+12:56:30.547 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: createPatient Input Arguments: [{"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}] Output Arguments: No Output
+12:57:48.262 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Starting PatientControllerTest using Java 11.0.22 on DESKTOP-HINNF83 with PID 10692 (started by dell in C:\Users\dell\Java\springprojectexample)
+12:57:48.262 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Starting PatientControllerTest using Java 11.0.22 on DESKTOP-HINNF83 with PID 10692 (started by dell in C:\Users\dell\Java\springprojectexample)
+12:57:48.278 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+12:57:48.278 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+12:57:57.332 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Started PatientControllerTest in 9.63 seconds (JVM running for 11.901)
+12:57:57.332 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Started PatientControllerTest in 9.63 seconds (JVM running for 11.901)
+12:57:57.743 [main] INFO  com.example.springprojectexample.controller.PatientController - New Patient Details: PatientDetails(id=null, firstName=Tony, lastName=Stark, gender=M, birthDate=1988-08-06, city=New York, provinceId=NY, allergies=HyperTension, height=176, weight=80, ssn=123-45-7891, creditScore=775, AdmissionDetailsList=null)
+12:57:57.743 [main] INFO  com.example.springprojectexample.controller.PatientController - New Patient Details: PatientDetails(id=null, firstName=Tony, lastName=Stark, gender=M, birthDate=1988-08-06, city=New York, provinceId=NY, allergies=HyperTension, height=176, weight=80, ssn=123-45-7891, creditScore=775, AdmissionDetailsList=null)
+12:57:57.963 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.createPatient executed in 175ms
+12:57:57.963 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.createPatient executed in 175ms
+12:57:57.970 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.createPatient(PatientDetails) executed in 175ms
+12:57:57.970 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.createPatient(PatientDetails) executed in 175ms
+12:57:57.971 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.createPatient(PatientDetails) executed in 241ms
+12:57:57.971 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.createPatient(PatientDetails) executed in 241ms
+12:57:57.972 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: createPatient Input Arguments: [{"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}] Output Arguments: No Output
+12:57:57.972 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: createPatient Input Arguments: [{"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}] Output Arguments: No Output
+13:05:52.004 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Starting PatientControllerTest using Java 11.0.22 on DESKTOP-HINNF83 with PID 12836 (started by dell in C:\Users\dell\Java\springprojectexample)
+13:05:52.004 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Starting PatientControllerTest using Java 11.0.22 on DESKTOP-HINNF83 with PID 12836 (started by dell in C:\Users\dell\Java\springprojectexample)
+13:05:52.019 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+13:05:52.019 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+13:06:02.122 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Started PatientControllerTest in 10.7 seconds (JVM running for 13.176)
+13:06:02.122 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Started PatientControllerTest in 10.7 seconds (JVM running for 13.176)
+13:06:02.501 [main] INFO  com.example.springprojectexample.controller.PatientController - Patient Record Found: 1
+13:06:02.501 [main] INFO  com.example.springprojectexample.controller.PatientController - Patient Record Found: 1
+13:06:02.624 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.getPatient executed in 104ms
+13:06:02.624 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.getPatient executed in 104ms
+13:06:02.633 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 104ms
+13:06:02.633 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 104ms
+13:06:02.635 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.getPatient(Long) executed in 149ms
+13:06:02.635 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.getPatient(Long) executed in 149ms
+13:06:02.635 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getPatient Input Arguments: [1] Output Arguments: No Output
+13:06:02.635 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getPatient Input Arguments: [1] Output Arguments: No Output
+13:07:35.338 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Starting PatientControllerTest using Java 11.0.22 on DESKTOP-HINNF83 with PID 12832 (started by dell in C:\Users\dell\Java\springprojectexample)
+13:07:35.338 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Starting PatientControllerTest using Java 11.0.22 on DESKTOP-HINNF83 with PID 12832 (started by dell in C:\Users\dell\Java\springprojectexample)
+13:07:35.354 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+13:07:35.354 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+13:07:45.313 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Started PatientControllerTest in 10.521 seconds (JVM running for 12.965)
+13:07:45.313 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Started PatientControllerTest in 10.521 seconds (JVM running for 12.965)
+13:07:45.842 [main] INFO  com.example.springprojectexample.controller.PatientController - New Patient Details: PatientDetails(id=null, firstName=Tony, lastName=Stark, gender=M, birthDate=1988-08-06, city=New York, provinceId=NY, allergies=HyperTension, height=176, weight=80, ssn=123-45-7891, creditScore=775, AdmissionDetailsList=null)
+13:07:45.842 [main] INFO  com.example.springprojectexample.controller.PatientController - New Patient Details: PatientDetails(id=null, firstName=Tony, lastName=Stark, gender=M, birthDate=1988-08-06, city=New York, provinceId=NY, allergies=HyperTension, height=176, weight=80, ssn=123-45-7891, creditScore=775, AdmissionDetailsList=null)
+13:07:46.050 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.createPatient executed in 165ms
+13:07:46.050 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.createPatient executed in 165ms
+13:07:46.057 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.createPatient(PatientDetails) executed in 165ms
+13:07:46.057 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.createPatient(PatientDetails) executed in 165ms
+13:07:46.058 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.createPatient(PatientDetails) executed in 226ms
+13:07:46.058 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.createPatient(PatientDetails) executed in 226ms
+13:07:46.059 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: createPatient Input Arguments: [{"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}] Output Arguments: No Output
+13:07:46.059 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: createPatient Input Arguments: [{"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}] Output Arguments: No Output
+13:08:54.668 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Starting PatientControllerTest using Java 11.0.22 on DESKTOP-HINNF83 with PID 4912 (started by dell in C:\Users\dell\Java\springprojectexample)
+13:08:54.668 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Starting PatientControllerTest using Java 11.0.22 on DESKTOP-HINNF83 with PID 4912 (started by dell in C:\Users\dell\Java\springprojectexample)
+13:08:54.683 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+13:08:54.683 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+13:09:03.778 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Started PatientControllerTest in 9.756 seconds (JVM running for 12.308)
+13:09:03.778 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Started PatientControllerTest in 9.756 seconds (JVM running for 12.308)
+13:09:04.192 [main] INFO  com.example.springprojectexample.controller.PatientController - New Patient Details: PatientDetails(id=null, firstName=Tony, lastName=Stark, gender=M, birthDate=1988-08-06, city=New York, provinceId=NY, allergies=HyperTension, height=176, weight=80, ssn=123-45-7891, creditScore=775, AdmissionDetailsList=null)
+13:09:04.192 [main] INFO  com.example.springprojectexample.controller.PatientController - New Patient Details: PatientDetails(id=null, firstName=Tony, lastName=Stark, gender=M, birthDate=1988-08-06, city=New York, provinceId=NY, allergies=HyperTension, height=176, weight=80, ssn=123-45-7891, creditScore=775, AdmissionDetailsList=null)
+13:09:04.407 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.createPatient executed in 172ms
+13:09:04.407 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.createPatient executed in 172ms
+13:09:04.415 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.createPatient(PatientDetails) executed in 172ms
+13:09:04.415 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.createPatient(PatientDetails) executed in 172ms
+13:09:04.416 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.createPatient(PatientDetails) executed in 233ms
+13:09:04.416 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.createPatient(PatientDetails) executed in 233ms
+13:09:04.416 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: createPatient Input Arguments: [{"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}] Output Arguments: No Output
+13:09:04.416 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: createPatient Input Arguments: [{"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}] Output Arguments: No Output
+13:10:10.737 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Starting PatientControllerTest using Java 11.0.22 on DESKTOP-HINNF83 with PID 1420 (started by dell in C:\Users\dell\Java\springprojectexample)
+13:10:10.737 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Starting PatientControllerTest using Java 11.0.22 on DESKTOP-HINNF83 with PID 1420 (started by dell in C:\Users\dell\Java\springprojectexample)
+13:10:10.752 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+13:10:10.752 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+13:10:19.769 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Started PatientControllerTest in 9.558 seconds (JVM running for 11.793)
+13:10:19.769 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Started PatientControllerTest in 9.558 seconds (JVM running for 11.793)
+13:10:20.174 [main] INFO  com.example.springprojectexample.controller.PatientController - New Patient Details: PatientDetails(id=null, firstName=Tony, lastName=Stark, gender=M, birthDate=1988-08-06, city=New York, provinceId=NY, allergies=HyperTension, height=176, weight=80, ssn=123-45-7891, creditScore=775, AdmissionDetailsList=null)
+13:10:20.174 [main] INFO  com.example.springprojectexample.controller.PatientController - New Patient Details: PatientDetails(id=null, firstName=Tony, lastName=Stark, gender=M, birthDate=1988-08-06, city=New York, provinceId=NY, allergies=HyperTension, height=176, weight=80, ssn=123-45-7891, creditScore=775, AdmissionDetailsList=null)
+13:10:20.380 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.createPatient executed in 163ms
+13:10:20.380 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.createPatient executed in 163ms
+13:10:20.386 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.createPatient(PatientDetails) executed in 163ms
+13:10:20.386 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.createPatient(PatientDetails) executed in 163ms
+13:10:20.387 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.createPatient(PatientDetails) executed in 223ms
+13:10:20.387 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.createPatient(PatientDetails) executed in 223ms
+13:10:20.387 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: createPatient Input Arguments: [{"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}] Output Arguments: No Output
+13:10:20.387 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: createPatient Input Arguments: [{"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}] Output Arguments: No Output
+14:06:58.699 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Starting PatientControllerTest using Java 11.0.22 on DESKTOP-HINNF83 with PID 2036 (started by dell in C:\Users\dell\Java\springprojectexample)
+14:06:58.699 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Starting PatientControllerTest using Java 11.0.22 on DESKTOP-HINNF83 with PID 2036 (started by dell in C:\Users\dell\Java\springprojectexample)
+14:06:58.713 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+14:06:58.713 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+14:07:07.808 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Started PatientControllerTest in 9.647 seconds (JVM running for 12.117)
+14:07:07.808 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Started PatientControllerTest in 9.647 seconds (JVM running for 12.117)
+14:07:08.111 [main] INFO  com.example.springprojectexample.controller.PatientController - New Patient Details: PatientDetails(id=null, firstName=Tony, lastName=Stark, gender=M, birthDate=1988-08-06, city=New York, provinceId=NY, allergies=HyperTension, height=176, weight=80, ssn=123-45-7891, creditScore=775, AdmissionDetailsList=null)
+14:07:08.111 [main] INFO  com.example.springprojectexample.controller.PatientController - New Patient Details: PatientDetails(id=null, firstName=Tony, lastName=Stark, gender=M, birthDate=1988-08-06, city=New York, provinceId=NY, allergies=HyperTension, height=176, weight=80, ssn=123-45-7891, creditScore=775, AdmissionDetailsList=null)
+14:07:08.333 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.service.PatientService.createPatient(PatientDetails) executed in 142ms
+14:07:08.333 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.service.PatientService.createPatient(PatientDetails) executed in 142ms
+14:07:08.334 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: createPatient Input Arguments: [{"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}] Output Arguments: {"id":1,"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}
+14:07:08.334 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: createPatient Input Arguments: [{"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}] Output Arguments: {"id":1,"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}
+14:07:08.354 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.createPatient executed in 189ms
+14:07:08.354 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.createPatient executed in 189ms
+14:07:08.359 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.createPatient(PatientDetails) executed in 189ms
+14:07:08.359 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.createPatient(PatientDetails) executed in 189ms
+14:07:08.366 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.createPatient(PatientDetails) executed in 263ms
+14:07:08.366 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.createPatient(PatientDetails) executed in 263ms
+14:07:08.366 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: createPatient Input Arguments: [{"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}] Output Arguments: {"id":1,"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}
+14:07:08.366 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: createPatient Input Arguments: [{"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}] Output Arguments: {"id":1,"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}
+14:08:32.377 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Starting PatientControllerTest using Java 11.0.22 on DESKTOP-HINNF83 with PID 10036 (started by dell in C:\Users\dell\Java\springprojectexample)
+14:08:32.377 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Starting PatientControllerTest using Java 11.0.22 on DESKTOP-HINNF83 with PID 10036 (started by dell in C:\Users\dell\Java\springprojectexample)
+14:08:32.391 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+14:08:32.391 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+14:08:42.092 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Started PatientControllerTest in 10.394 seconds (JVM running for 12.835)
+14:08:42.092 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Started PatientControllerTest in 10.394 seconds (JVM running for 12.835)
+14:08:42.273 [main] INFO  com.example.springprojectexample.controller.PatientController - Patient Record Found: 1
+14:08:42.273 [main] INFO  com.example.springprojectexample.controller.PatientController - Patient Record Found: 1
+14:08:42.356 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.getPatient executed in 69ms
+14:08:42.356 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.getPatient executed in 69ms
+14:08:42.365 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 69ms
+14:08:42.365 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 69ms
+14:08:42.366 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.getPatient(Long) executed in 103ms
+14:08:42.366 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.getPatient(Long) executed in 103ms
+14:08:42.366 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getPatient Input Arguments: [1] Output Arguments: No Output
+14:08:42.366 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getPatient Input Arguments: [1] Output Arguments: No Output
+15:36:56.953 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Starting PatientControllerTest using Java 11.0.22 on DESKTOP-HINNF83 with PID 12948 (started by dell in C:\Users\dell\Java\springprojectexample)
+15:36:56.953 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Starting PatientControllerTest using Java 11.0.22 on DESKTOP-HINNF83 with PID 12948 (started by dell in C:\Users\dell\Java\springprojectexample)
+15:36:56.968 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+15:36:56.968 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+15:37:07.365 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Started PatientControllerTest in 11.089 seconds (JVM running for 13.733)
+15:37:07.365 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Started PatientControllerTest in 11.089 seconds (JVM running for 13.733)
+15:37:07.566 [main] INFO  com.example.springprojectexample.controller.PatientController - Patient Record Found: 1
+15:37:07.566 [main] INFO  com.example.springprojectexample.controller.PatientController - Patient Record Found: 1
+15:37:07.658 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.getPatient executed in 79ms
+15:37:07.658 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.getPatient executed in 79ms
+15:37:07.666 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 79ms
+15:37:07.666 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 79ms
+15:37:07.667 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.getPatient(Long) executed in 112ms
+15:37:07.667 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.getPatient(Long) executed in 112ms
+15:37:07.668 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getPatient Input Arguments: [1] Output Arguments: No Output
+15:37:07.668 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getPatient Input Arguments: [1] Output Arguments: No Output
+15:41:10.911 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Starting PatientControllerTest using Java 11.0.22 on DESKTOP-HINNF83 with PID 9152 (started by dell in C:\Users\dell\Java\springprojectexample)
+15:41:10.911 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Starting PatientControllerTest using Java 11.0.22 on DESKTOP-HINNF83 with PID 9152 (started by dell in C:\Users\dell\Java\springprojectexample)
+15:41:10.926 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+15:41:10.926 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+15:41:19.966 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Started PatientControllerTest in 9.599 seconds (JVM running for 11.913)
+15:41:19.966 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Started PatientControllerTest in 9.599 seconds (JVM running for 11.913)
+15:41:20.253 [main] INFO  com.example.springprojectexample.controller.PatientController - New Patient Details: PatientDetails(id=null, firstName=Tony, lastName=Stark, gender=M, birthDate=1988-08-06, city=New York, provinceId=NY, allergies=HyperTension, height=176, weight=80, ssn=123-45-7891, creditScore=775, AdmissionDetailsList=null)
+15:41:20.253 [main] INFO  com.example.springprojectexample.controller.PatientController - New Patient Details: PatientDetails(id=null, firstName=Tony, lastName=Stark, gender=M, birthDate=1988-08-06, city=New York, provinceId=NY, allergies=HyperTension, height=176, weight=80, ssn=123-45-7891, creditScore=775, AdmissionDetailsList=null)
+15:41:20.445 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.service.PatientService.createPatient(PatientDetails) executed in 152ms
+15:41:20.445 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.service.PatientService.createPatient(PatientDetails) executed in 152ms
+15:41:20.446 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: createPatient Input Arguments: [{"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}] Output Arguments: {"id":1,"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}
+15:41:20.446 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: createPatient Input Arguments: [{"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}] Output Arguments: {"id":1,"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}
+15:41:20.456 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.createPatient executed in 161ms
+15:41:20.456 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.createPatient executed in 161ms
+15:41:20.458 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.createPatient(PatientDetails) executed in 161ms
+15:41:20.458 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.createPatient(PatientDetails) executed in 161ms
+15:41:20.459 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.createPatient(PatientDetails) executed in 216ms
+15:41:20.459 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.createPatient(PatientDetails) executed in 216ms
+15:41:20.459 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: createPatient Input Arguments: [{"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}] Output Arguments: {"id":1,"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}
+15:41:20.459 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: createPatient Input Arguments: [{"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}] Output Arguments: {"id":1,"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}
+15:41:58.043 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Starting PatientControllerTest using Java 11.0.22 on DESKTOP-HINNF83 with PID 11544 (started by dell in C:\Users\dell\Java\springprojectexample)
+15:41:58.043 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Starting PatientControllerTest using Java 11.0.22 on DESKTOP-HINNF83 with PID 11544 (started by dell in C:\Users\dell\Java\springprojectexample)
+15:41:58.059 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+15:41:58.059 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+15:42:07.573 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Started PatientControllerTest in 10.111 seconds (JVM running for 12.434)
+15:42:07.573 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Started PatientControllerTest in 10.111 seconds (JVM running for 12.434)
+15:42:07.782 [main] INFO  com.example.springprojectexample.controller.PatientController - Patient Record Found: 1
+15:42:07.782 [main] INFO  com.example.springprojectexample.controller.PatientController - Patient Record Found: 1
+15:42:07.860 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.getPatient executed in 67ms
+15:42:07.860 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.getPatient executed in 67ms
+15:42:07.868 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 67ms
+15:42:07.868 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 67ms
+15:42:07.869 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.getPatient(Long) executed in 99ms
+15:42:07.869 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.getPatient(Long) executed in 99ms
+15:42:07.870 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getPatient Input Arguments: [1] Output Arguments: No Output
+15:42:07.870 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getPatient Input Arguments: [1] Output Arguments: No Output
+15:44:52.015 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Starting PatientControllerTest using Java 11.0.22 on DESKTOP-HINNF83 with PID 8152 (started by dell in C:\Users\dell\Java\springprojectexample)
+15:44:52.015 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Starting PatientControllerTest using Java 11.0.22 on DESKTOP-HINNF83 with PID 8152 (started by dell in C:\Users\dell\Java\springprojectexample)
+15:44:52.029 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+15:44:52.029 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+15:45:02.388 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Started PatientControllerTest in 10.904 seconds (JVM running for 13.296)
+15:45:02.388 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Started PatientControllerTest in 10.904 seconds (JVM running for 13.296)
+15:45:02.825 [main] INFO  com.example.springprojectexample.controller.PatientController - New Patient Details: PatientDetails(id=null, firstName=Tony, lastName=Stark, gender=M, birthDate=1988-08-06, city=New York, provinceId=NY, allergies=HyperTension, height=176, weight=80, ssn=123-45-7891, creditScore=775, AdmissionDetailsList=null)
+15:45:02.825 [main] INFO  com.example.springprojectexample.controller.PatientController - New Patient Details: PatientDetails(id=null, firstName=Tony, lastName=Stark, gender=M, birthDate=1988-08-06, city=New York, provinceId=NY, allergies=HyperTension, height=176, weight=80, ssn=123-45-7891, creditScore=775, AdmissionDetailsList=null)
+15:45:03.057 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.service.PatientService.createPatient(PatientDetails) executed in 159ms
+15:45:03.057 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.service.PatientService.createPatient(PatientDetails) executed in 159ms
+15:45:03.058 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: createPatient Input Arguments: [{"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}] Output Arguments: {"id":1,"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}
+15:45:03.058 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: createPatient Input Arguments: [{"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}] Output Arguments: {"id":1,"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}
+15:45:03.068 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.createPatient executed in 173ms
+15:45:03.068 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.createPatient executed in 173ms
+15:45:03.069 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.createPatient(PatientDetails) executed in 173ms
+15:45:03.069 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.createPatient(PatientDetails) executed in 173ms
+15:45:03.070 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.createPatient(PatientDetails) executed in 265ms
+15:45:03.070 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.createPatient(PatientDetails) executed in 265ms
+15:45:03.070 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: createPatient Input Arguments: [{"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}] Output Arguments: {"id":1,"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}
+15:45:03.070 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: createPatient Input Arguments: [{"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}] Output Arguments: {"id":1,"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}
+15:48:18.020 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Starting PatientControllerTest using Java 11.0.22 on DESKTOP-HINNF83 with PID 10724 (started by dell in C:\Users\dell\Java\springprojectexample)
+15:48:18.020 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Starting PatientControllerTest using Java 11.0.22 on DESKTOP-HINNF83 with PID 10724 (started by dell in C:\Users\dell\Java\springprojectexample)
+15:48:18.033 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+15:48:18.033 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+15:48:28.011 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Started PatientControllerTest in 10.57 seconds (JVM running for 12.895)
+15:48:28.011 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Started PatientControllerTest in 10.57 seconds (JVM running for 12.895)
+15:48:28.178 [main] INFO  com.example.springprojectexample.controller.PatientController - Patient Record Found: 1
+15:48:28.178 [main] INFO  com.example.springprojectexample.controller.PatientController - Patient Record Found: 1
+15:48:28.289 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.getPatient executed in 79ms
+15:48:28.289 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.getPatient executed in 79ms
+15:48:28.304 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 79ms
+15:48:28.304 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 79ms
+15:48:28.305 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.getPatient(Long) executed in 136ms
+15:48:28.305 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.getPatient(Long) executed in 136ms
+15:48:28.305 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getPatient Input Arguments: [1] Output Arguments: No Output
+15:48:28.305 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getPatient Input Arguments: [1] Output Arguments: No Output
+15:49:32.922 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Starting PatientControllerTest using Java 11.0.22 on DESKTOP-HINNF83 with PID 5040 (started by dell in C:\Users\dell\Java\springprojectexample)
+15:49:32.922 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Starting PatientControllerTest using Java 11.0.22 on DESKTOP-HINNF83 with PID 5040 (started by dell in C:\Users\dell\Java\springprojectexample)
+15:49:32.937 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+15:49:32.937 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+15:49:42.012 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Started PatientControllerTest in 9.633 seconds (JVM running for 11.98)
+15:49:42.012 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Started PatientControllerTest in 9.633 seconds (JVM running for 11.98)
+15:49:42.203 [main] INFO  com.example.springprojectexample.controller.PatientController - Patient Record Found: 1
+15:49:42.203 [main] INFO  com.example.springprojectexample.controller.PatientController - Patient Record Found: 1
+15:51:35.282 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Starting PatientControllerTest using Java 11.0.22 on DESKTOP-HINNF83 with PID 9468 (started by dell in C:\Users\dell\Java\springprojectexample)
+15:51:35.282 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Starting PatientControllerTest using Java 11.0.22 on DESKTOP-HINNF83 with PID 9468 (started by dell in C:\Users\dell\Java\springprojectexample)
+15:51:35.295 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+15:51:35.295 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+15:51:45.272 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Started PatientControllerTest in 10.519 seconds (JVM running for 12.762)
+15:51:45.272 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Started PatientControllerTest in 10.519 seconds (JVM running for 12.762)
+15:51:45.472 [main] INFO  com.example.springprojectexample.controller.PatientController - Patient Record Found: 1
+15:51:45.472 [main] INFO  com.example.springprojectexample.controller.PatientController - Patient Record Found: 1
+15:51:45.568 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.getPatient executed in 80ms
+15:51:45.568 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.getPatient executed in 80ms
+15:51:45.578 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 80ms
+15:51:45.578 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 80ms
+15:51:45.579 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.getPatient(Long) executed in 118ms
+15:51:45.579 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.getPatient(Long) executed in 118ms
+15:51:45.580 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getPatient Input Arguments: [1] Output Arguments: No Output
+15:51:45.580 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getPatient Input Arguments: [1] Output Arguments: No Output
+16:23:57.088 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Starting PatientControllerTest using Java 11.0.22 on DESKTOP-HINNF83 with PID 1756 (started by dell in C:\Users\dell\Java\springprojectexample)
+16:23:57.088 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Starting PatientControllerTest using Java 11.0.22 on DESKTOP-HINNF83 with PID 1756 (started by dell in C:\Users\dell\Java\springprojectexample)
+16:23:57.120 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+16:23:57.120 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+16:24:08.300 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Started PatientControllerTest in 11.833 seconds (JVM running for 15.748)
+16:24:08.300 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Started PatientControllerTest in 11.833 seconds (JVM running for 15.748)
+16:24:08.579 [main] INFO  com.example.springprojectexample.controller.PatientController - Patient Record Found: 1
+16:24:08.579 [main] INFO  com.example.springprojectexample.controller.PatientController - Patient Record Found: 1
+16:24:08.688 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.getPatient executed in 91ms
+16:24:08.688 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.getPatient executed in 91ms
+16:24:08.699 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 91ms
+16:24:08.699 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 91ms
+16:24:08.700 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.getPatient(Long) executed in 133ms
+16:24:08.700 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.getPatient(Long) executed in 133ms
+16:24:08.700 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getPatient Input Arguments: [1] Output Arguments: No Output
+16:24:08.700 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getPatient Input Arguments: [1] Output Arguments: No Output
+16:27:21.865 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Starting PatientControllerTest using Java 11.0.22 on DESKTOP-HINNF83 with PID 7636 (started by dell in C:\Users\dell\Java\springprojectexample)
+16:27:21.865 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Starting PatientControllerTest using Java 11.0.22 on DESKTOP-HINNF83 with PID 7636 (started by dell in C:\Users\dell\Java\springprojectexample)
+16:27:21.879 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+16:27:21.879 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+16:27:30.890 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Started PatientControllerTest in 9.559 seconds (JVM running for 11.838)
+16:27:30.890 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Started PatientControllerTest in 9.559 seconds (JVM running for 11.838)
+16:27:31.067 [main] INFO  com.example.springprojectexample.controller.PatientController - Patient Record Found: 1
+16:27:31.067 [main] INFO  com.example.springprojectexample.controller.PatientController - Patient Record Found: 1
+16:27:31.153 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.getPatient executed in 72ms
+16:27:31.153 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.getPatient executed in 72ms
+16:27:31.161 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 72ms
+16:27:31.161 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 72ms
+16:27:31.162 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.getPatient(Long) executed in 105ms
+16:27:31.162 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.getPatient(Long) executed in 105ms
+16:27:31.162 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getPatient Input Arguments: [1] Output Arguments: No Output
+16:27:31.162 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getPatient Input Arguments: [1] Output Arguments: No Output
+16:29:19.857 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Starting PatientControllerTest using Java 11.0.22 on DESKTOP-HINNF83 with PID 7620 (started by dell in C:\Users\dell\Java\springprojectexample)
+16:29:19.857 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Starting PatientControllerTest using Java 11.0.22 on DESKTOP-HINNF83 with PID 7620 (started by dell in C:\Users\dell\Java\springprojectexample)
+16:29:19.871 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+16:29:19.871 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+16:29:30.205 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Started PatientControllerTest in 10.883 seconds (JVM running for 13.14)
+16:29:30.205 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Started PatientControllerTest in 10.883 seconds (JVM running for 13.14)
+16:29:30.418 [main] INFO  com.example.springprojectexample.controller.PatientController - Patient Record Found: 1
+16:29:30.418 [main] INFO  com.example.springprojectexample.controller.PatientController - Patient Record Found: 1
+16:29:30.517 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.getPatient executed in 80ms
+16:29:30.517 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.getPatient executed in 80ms
+16:29:30.526 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 80ms
+16:29:30.526 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 80ms
+16:29:30.527 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.getPatient(Long) executed in 137ms
+16:29:30.527 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.getPatient(Long) executed in 137ms
+16:29:30.527 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getPatient Input Arguments: [1] Output Arguments: No Output
+16:29:30.527 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getPatient Input Arguments: [1] Output Arguments: No Output
+19:34:25.701 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Starting PatientControllerTest using Java 11.0.22 on DESKTOP-HINNF83 with PID 10108 (started by dell in C:\Users\dell\Java\springprojectexample)
+19:34:25.701 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Starting PatientControllerTest using Java 11.0.22 on DESKTOP-HINNF83 with PID 10108 (started by dell in C:\Users\dell\Java\springprojectexample)
+19:34:25.717 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+19:34:25.717 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+19:34:35.072 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Started PatientControllerTest in 9.966 seconds (JVM running for 12.31)
+19:34:35.072 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Started PatientControllerTest in 9.966 seconds (JVM running for 12.31)
+19:34:35.269 [main] INFO  com.example.springprojectexample.controller.PatientController - Patient Record Found: 1
+19:34:35.269 [main] INFO  com.example.springprojectexample.controller.PatientController - Patient Record Found: 1
+19:34:35.361 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.getPatient executed in 77ms
+19:34:35.361 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.getPatient executed in 77ms
+19:34:35.368 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 77ms
+19:34:35.368 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 77ms
+19:34:35.369 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.getPatient(Long) executed in 109ms
+19:34:35.369 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.getPatient(Long) executed in 109ms
+19:34:35.369 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getPatient Input Arguments: [1] Output Arguments: No Output
+19:34:35.369 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getPatient Input Arguments: [1] Output Arguments: No Output
+20:35:01.900 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Starting PatientControllerTest using Java 11.0.22 on DESKTOP-HINNF83 with PID 11392 (started by dell in C:\Users\dell\Java\springprojectexample)
+20:35:01.900 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Starting PatientControllerTest using Java 11.0.22 on DESKTOP-HINNF83 with PID 11392 (started by dell in C:\Users\dell\Java\springprojectexample)
+20:35:01.913 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+20:35:01.913 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+20:35:12.022 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Started PatientControllerTest in 10.781 seconds (JVM running for 13.199)
+20:35:12.022 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Started PatientControllerTest in 10.781 seconds (JVM running for 13.199)
+20:35:12.221 [main] INFO  com.example.springprojectexample.controller.PatientController - Patient Record Found: 1
+20:35:12.221 [main] INFO  com.example.springprojectexample.controller.PatientController - Patient Record Found: 1
+20:35:12.314 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.getPatient executed in 78ms
+20:35:12.314 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.getPatient executed in 78ms
+20:35:12.322 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 78ms
+20:35:12.322 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 78ms
+20:35:12.323 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.getPatient(Long) executed in 132ms
+20:35:12.323 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.getPatient(Long) executed in 132ms
+20:35:12.324 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getPatient Input Arguments: [1] Output Arguments: No Output
+20:35:12.324 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getPatient Input Arguments: [1] Output Arguments: No Output
+20:36:52.318 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Starting PatientControllerTest using Java 11.0.22 on DESKTOP-HINNF83 with PID 10668 (started by dell in C:\Users\dell\Java\springprojectexample)
+20:36:52.318 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Starting PatientControllerTest using Java 11.0.22 on DESKTOP-HINNF83 with PID 10668 (started by dell in C:\Users\dell\Java\springprojectexample)
+20:36:52.331 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+20:36:52.331 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+20:37:01.412 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Started PatientControllerTest in 9.641 seconds (JVM running for 12.012)
+20:37:01.412 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Started PatientControllerTest in 9.641 seconds (JVM running for 12.012)
+20:37:01.700 [main] INFO  com.example.springprojectexample.controller.PatientController - New Patient Details: PatientDetails(id=null, firstName=Tony, lastName=Stark, gender=M, birthDate=1988-08-06, city=New York, provinceId=NY, allergies=HyperTension, height=176, weight=80, ssn=123-45-7891, creditScore=775, AdmissionDetailsList=null)
+20:37:01.700 [main] INFO  com.example.springprojectexample.controller.PatientController - New Patient Details: PatientDetails(id=null, firstName=Tony, lastName=Stark, gender=M, birthDate=1988-08-06, city=New York, provinceId=NY, allergies=HyperTension, height=176, weight=80, ssn=123-45-7891, creditScore=775, AdmissionDetailsList=null)
+20:37:01.922 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.service.PatientService.createPatient(PatientDetails) executed in 142ms
+20:37:01.922 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.service.PatientService.createPatient(PatientDetails) executed in 142ms
+20:37:01.922 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: createPatient Input Arguments: [{"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}] Output Arguments: {"id":1,"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}
+20:37:01.922 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: createPatient Input Arguments: [{"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}] Output Arguments: {"id":1,"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}
+20:37:01.933 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.createPatient executed in 153ms
+20:37:01.933 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.createPatient executed in 153ms
+20:37:01.934 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.createPatient(PatientDetails) executed in 153ms
+20:37:01.934 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.createPatient(PatientDetails) executed in 153ms
+20:37:01.935 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.createPatient(PatientDetails) executed in 246ms
+20:37:01.935 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.createPatient(PatientDetails) executed in 246ms
+20:37:01.935 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: createPatient Input Arguments: [{"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}] Output Arguments: {"id":1,"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}
+20:37:01.935 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: createPatient Input Arguments: [{"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}] Output Arguments: {"id":1,"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}
+20:37:02.081 [main] INFO  com.example.springprojectexample.controller.PatientController - Patient Record Found: 1
+20:37:02.081 [main] INFO  com.example.springprojectexample.controller.PatientController - Patient Record Found: 1
+20:37:02.156 [main] INFO  com.example.springprojectexample.service.AdmissionService - Admission Details by PatientId: []
+20:37:02.156 [main] INFO  com.example.springprojectexample.service.AdmissionService - Admission Details by PatientId: []
+20:37:02.156 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - List com.example.springprojectexample.service.AdmissionService.getAdmissionsDetailsByPatientId(Long) executed in 38ms
+20:37:02.156 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - List com.example.springprojectexample.service.AdmissionService.getAdmissionsDetailsByPatientId(Long) executed in 38ms
+20:37:02.158 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getAdmissionsDetailsByPatientId Input Arguments: [1] Output Arguments: []
+20:37:02.158 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getAdmissionsDetailsByPatientId Input Arguments: [1] Output Arguments: []
+20:37:02.158 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - AdmissionService.getAdmissionsDetailsByPatientId executed in 40ms
+20:37:02.158 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - AdmissionService.getAdmissionsDetailsByPatientId executed in 40ms
+20:37:02.158 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - List com.example.springprojectexample.service.AdmissionService.getAdmissionsDetailsByPatientId(Long) executed in 40ms
+20:37:02.158 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - List com.example.springprojectexample.service.AdmissionService.getAdmissionsDetailsByPatientId(Long) executed in 40ms
+20:37:02.168 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.getPatient executed in 87ms
+20:37:02.168 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.getPatient executed in 87ms
+20:37:02.168 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 87ms
+20:37:02.168 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 87ms
+20:37:02.168 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.getPatient(Long) executed in 87ms
+20:37:02.168 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.getPatient(Long) executed in 87ms
+20:37:02.169 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getPatient Input Arguments: [1] Output Arguments: No Output
+20:37:02.169 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getPatient Input Arguments: [1] Output Arguments: No Output
+20:45:57.875 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Starting PatientControllerTest using Java 11.0.22 on DESKTOP-HINNF83 with PID 13868 (started by dell in C:\Users\dell\Java\springprojectexample)
+20:45:57.875 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Starting PatientControllerTest using Java 11.0.22 on DESKTOP-HINNF83 with PID 13868 (started by dell in C:\Users\dell\Java\springprojectexample)
+20:45:57.888 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+20:45:57.888 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+20:46:07.022 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Started PatientControllerTest in 9.715 seconds (JVM running for 12.064)
+20:46:07.022 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Started PatientControllerTest in 9.715 seconds (JVM running for 12.064)
+20:46:07.329 [main] INFO  com.example.springprojectexample.controller.PatientController - New Patient Details: PatientDetails(id=null, firstName=Tony, lastName=Stark, gender=M, birthDate=1988-08-06, city=New York, provinceId=NY, allergies=HyperTension, height=176, weight=80, ssn=123-45-7891, creditScore=775, AdmissionDetailsList=null)
+20:46:07.329 [main] INFO  com.example.springprojectexample.controller.PatientController - New Patient Details: PatientDetails(id=null, firstName=Tony, lastName=Stark, gender=M, birthDate=1988-08-06, city=New York, provinceId=NY, allergies=HyperTension, height=176, weight=80, ssn=123-45-7891, creditScore=775, AdmissionDetailsList=null)
+20:46:07.497 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.service.PatientService.createPatient(PatientDetails) executed in 124ms
+20:46:07.497 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.service.PatientService.createPatient(PatientDetails) executed in 124ms
+20:46:07.498 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: createPatient Input Arguments: [{"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}] Output Arguments: {"id":1,"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}
+20:46:07.498 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: createPatient Input Arguments: [{"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}] Output Arguments: {"id":1,"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}
+20:46:07.507 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.createPatient executed in 133ms
+20:46:07.507 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.createPatient executed in 133ms
+20:46:07.508 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.createPatient(PatientDetails) executed in 133ms
+20:46:07.508 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.createPatient(PatientDetails) executed in 133ms
+20:46:07.508 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.createPatient(PatientDetails) executed in 189ms
+20:46:07.508 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.createPatient(PatientDetails) executed in 189ms
+20:46:07.508 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: createPatient Input Arguments: [{"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}] Output Arguments: {"id":1,"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}
+20:46:07.508 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: createPatient Input Arguments: [{"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}] Output Arguments: {"id":1,"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}
+20:46:07.752 [main] INFO  com.example.springprojectexample.controller.PatientController - Patient Record Found: 1
+20:46:07.752 [main] INFO  com.example.springprojectexample.controller.PatientController - Patient Record Found: 1
+20:46:07.825 [main] INFO  com.example.springprojectexample.service.AdmissionService - Admission Details by PatientId: []
+20:46:07.825 [main] INFO  com.example.springprojectexample.service.AdmissionService - Admission Details by PatientId: []
+20:46:07.825 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - List com.example.springprojectexample.service.AdmissionService.getAdmissionsDetailsByPatientId(Long) executed in 37ms
+20:46:07.825 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - List com.example.springprojectexample.service.AdmissionService.getAdmissionsDetailsByPatientId(Long) executed in 37ms
+20:46:07.827 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getAdmissionsDetailsByPatientId Input Arguments: [1] Output Arguments: []
+20:46:07.827 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getAdmissionsDetailsByPatientId Input Arguments: [1] Output Arguments: []
+20:46:07.827 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - AdmissionService.getAdmissionsDetailsByPatientId executed in 39ms
+20:46:07.827 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - AdmissionService.getAdmissionsDetailsByPatientId executed in 39ms
+20:46:07.827 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - List com.example.springprojectexample.service.AdmissionService.getAdmissionsDetailsByPatientId(Long) executed in 39ms
+20:46:07.827 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - List com.example.springprojectexample.service.AdmissionService.getAdmissionsDetailsByPatientId(Long) executed in 39ms
+20:46:07.828 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 75ms
+20:46:07.828 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 75ms
+20:46:07.829 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getPatient Input Arguments: [1] Output Arguments: {"id":1,"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7896","creditScore":752,"admissionDetailsList":[]}
+20:46:07.829 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getPatient Input Arguments: [1] Output Arguments: {"id":1,"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7896","creditScore":752,"admissionDetailsList":[]}
+20:46:07.829 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.getPatient executed in 76ms
+20:46:07.829 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.getPatient executed in 76ms
+20:46:07.829 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 76ms
+20:46:07.829 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 76ms
+20:46:07.830 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.getPatient(Long) executed in 78ms
+20:46:07.830 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.getPatient(Long) executed in 78ms
+20:46:07.831 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getPatient Input Arguments: [1] Output Arguments: {"id":1,"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7896","creditScore":752,"admissionDetailsList":[]}
+20:46:07.831 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getPatient Input Arguments: [1] Output Arguments: {"id":1,"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7896","creditScore":752,"admissionDetailsList":[]}
+20:46:58.024 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Starting PatientControllerTest using Java 11.0.22 on DESKTOP-HINNF83 with PID 6008 (started by dell in C:\Users\dell\Java\springprojectexample)
+20:46:58.024 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Starting PatientControllerTest using Java 11.0.22 on DESKTOP-HINNF83 with PID 6008 (started by dell in C:\Users\dell\Java\springprojectexample)
+20:46:58.039 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+20:46:58.039 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+20:47:06.945 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Started PatientControllerTest in 9.452 seconds (JVM running for 11.767)
+20:47:06.945 [main] INFO  com.example.springprojectexample.controller.PatientControllerTest - Started PatientControllerTest in 9.452 seconds (JVM running for 11.767)
+20:47:07.296 [main] INFO  com.example.springprojectexample.controller.PatientController - New Patient Details: PatientDetails(id=null, firstName=Tony, lastName=Stark, gender=M, birthDate=1988-08-06, city=New York, provinceId=NY, allergies=HyperTension, height=176, weight=80, ssn=123-45-7891, creditScore=775, AdmissionDetailsList=null)
+20:47:07.296 [main] INFO  com.example.springprojectexample.controller.PatientController - New Patient Details: PatientDetails(id=null, firstName=Tony, lastName=Stark, gender=M, birthDate=1988-08-06, city=New York, provinceId=NY, allergies=HyperTension, height=176, weight=80, ssn=123-45-7891, creditScore=775, AdmissionDetailsList=null)
+20:47:07.469 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.service.PatientService.createPatient(PatientDetails) executed in 132ms
+20:47:07.469 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.service.PatientService.createPatient(PatientDetails) executed in 132ms
+20:47:07.469 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: createPatient Input Arguments: [{"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}] Output Arguments: {"id":1,"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}
+20:47:07.469 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: createPatient Input Arguments: [{"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}] Output Arguments: {"id":1,"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}
+20:47:07.480 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.createPatient executed in 142ms
+20:47:07.480 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.createPatient executed in 142ms
+20:47:07.482 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.createPatient(PatientDetails) executed in 142ms
+20:47:07.482 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.createPatient(PatientDetails) executed in 142ms
+20:47:07.483 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.createPatient(PatientDetails) executed in 196ms
+20:47:07.483 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.createPatient(PatientDetails) executed in 196ms
+20:47:07.483 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: createPatient Input Arguments: [{"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}] Output Arguments: {"id":1,"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}
+20:47:07.483 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: createPatient Input Arguments: [{"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}] Output Arguments: {"id":1,"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7891","creditScore":775}
+20:47:07.664 [main] INFO  com.example.springprojectexample.controller.PatientController - Patient Record Found: 1
+20:47:07.664 [main] INFO  com.example.springprojectexample.controller.PatientController - Patient Record Found: 1
+20:47:07.733 [main] INFO  com.example.springprojectexample.service.AdmissionService - Admission Details by PatientId: []
+20:47:07.733 [main] INFO  com.example.springprojectexample.service.AdmissionService - Admission Details by PatientId: []
+20:47:07.733 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - List com.example.springprojectexample.service.AdmissionService.getAdmissionsDetailsByPatientId(Long) executed in 37ms
+20:47:07.733 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - List com.example.springprojectexample.service.AdmissionService.getAdmissionsDetailsByPatientId(Long) executed in 37ms
+20:47:07.734 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getAdmissionsDetailsByPatientId Input Arguments: [1] Output Arguments: []
+20:47:07.734 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getAdmissionsDetailsByPatientId Input Arguments: [1] Output Arguments: []
+20:47:07.736 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - AdmissionService.getAdmissionsDetailsByPatientId executed in 40ms
+20:47:07.736 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - AdmissionService.getAdmissionsDetailsByPatientId executed in 40ms
+20:47:07.736 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - List com.example.springprojectexample.service.AdmissionService.getAdmissionsDetailsByPatientId(Long) executed in 40ms
+20:47:07.736 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - List com.example.springprojectexample.service.AdmissionService.getAdmissionsDetailsByPatientId(Long) executed in 40ms
+20:47:07.737 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 73ms
+20:47:07.737 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 73ms
+20:47:07.738 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getPatient Input Arguments: [1] Output Arguments: {"id":1,"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7896","creditScore":752,"admissionDetailsList":[]}
+20:47:07.738 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getPatient Input Arguments: [1] Output Arguments: {"id":1,"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7896","creditScore":752,"admissionDetailsList":[]}
+20:47:07.738 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.getPatient executed in 74ms
+20:47:07.738 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientService.getPatient executed in 74ms
+20:47:07.739 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 74ms
+20:47:07.739 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - PatientDetails com.example.springprojectexample.service.PatientService.getPatient(Long) executed in 74ms
+20:47:07.740 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.getPatient(Long) executed in 76ms
+20:47:07.740 [main] INFO  com.example.springprojectexample.aop.MethodExecutionTime - PatientDetails com.example.springprojectexample.controller.PatientController.getPatient(Long) executed in 76ms
+20:47:07.740 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getPatient Input Arguments: [1] Output Arguments: {"id":1,"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7896","creditScore":752,"admissionDetailsList":[]}
+20:47:07.740 [main] INFO  com.example.springprojectexample.aop.MethodExecutionAspectTime - Method Name: getPatient Input Arguments: [1] Output Arguments: {"id":1,"firstName":"Tony","lastName":"Stark","gender":"M","birthDate":[1988,8,6],"city":"New York","provinceId":"NY","allergies":"HyperTension","height":176,"weight":80,"ssn":"123-45-7896","creditScore":752,"admissionDetailsList":[]}
